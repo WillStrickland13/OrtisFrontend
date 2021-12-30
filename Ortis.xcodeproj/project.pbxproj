@@ -15,6 +15,12 @@
 		608ED6AB277D469600E94BD7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6AA277D469600E94BD7 /* User.swift */; };
 		608ED6C2277D5D3A00E94BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608ED6C1277D5D3A00E94BD7 /* LaunchScreen.storyboard */; };
 		608ED6C6277D5EFE00E94BD7 /* Ortis logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 608ED6C5277D5EFE00E94BD7 /* Ortis logo.png */; };
+		608ED6CA277E479C00E94BD7 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6C9277E479C00E94BD7 /* MainMenuView.swift */; };
+		608ED6CC277E4A3900E94BD7 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6CB277E4A3900E94BD7 /* HomeButton.swift */; };
+		608ED6CF277E4CA400E94BD7 /* PostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6CE277E4CA400E94BD7 /* PostButton.swift */; };
+		608ED6D1277E4D3400E94BD7 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D0277E4D3400E94BD7 /* ProfileButton.swift */; };
+		608ED6D3277E4DBD00E94BD7 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D2277E4DBD00E94BD7 /* BottomBar.swift */; };
+		608ED6D5277E562F00E94BD7 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D4277E562F00E94BD7 /* UsersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		608ED6AA277D469600E94BD7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		608ED6C1277D5D3A00E94BD7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		608ED6C5277D5EFE00E94BD7 /* Ortis logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ortis logo.png"; path = "../../Downloads/Ortis logo.png"; sourceTree = "<group>"; };
+		608ED6C9277E479C00E94BD7 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		608ED6CB277E4A3900E94BD7 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
+		608ED6CE277E4CA400E94BD7 /* PostButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostButton.swift; sourceTree = "<group>"; };
+		608ED6D0277E4D3400E94BD7 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
+		608ED6D2277E4DBD00E94BD7 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
+		608ED6D4277E562F00E94BD7 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 				608ED6C0277D5CE500E94BD7 /* Views */,
 				608ED6A0277936CE00E94BD7 /* Preview Content */,
 				608ED6AA277D469600E94BD7 /* User.swift */,
+				608ED6CD277E4C7800E94BD7 /* Images */,
 			);
 			path = Ortis;
 			sourceTree = "<group>";
@@ -83,8 +96,21 @@
 				608ED69C277936CE00E94BD7 /* ContentView.swift */,
 				608ED6A82779373F00E94BD7 /* ViewController.swift */,
 				608ED6C1277D5D3A00E94BD7 /* LaunchScreen.storyboard */,
+				608ED6C9277E479C00E94BD7 /* MainMenuView.swift */,
+				608ED6D4277E562F00E94BD7 /* UsersView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		608ED6CD277E4C7800E94BD7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				608ED6CB277E4A3900E94BD7 /* HomeButton.swift */,
+				608ED6CE277E4CA400E94BD7 /* PostButton.swift */,
+				608ED6D0277E4D3400E94BD7 /* ProfileButton.swift */,
+				608ED6D2277E4DBD00E94BD7 /* BottomBar.swift */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				608ED6CA277E479C00E94BD7 /* MainMenuView.swift in Sources */,
+				608ED6CC277E4A3900E94BD7 /* HomeButton.swift in Sources */,
+				608ED6D3277E4DBD00E94BD7 /* BottomBar.swift in Sources */,
 				608ED6AB277D469600E94BD7 /* User.swift in Sources */,
+				608ED6D1277E4D3400E94BD7 /* ProfileButton.swift in Sources */,
+				608ED6D5277E562F00E94BD7 /* UsersView.swift in Sources */,
 				608ED6A92779373F00E94BD7 /* ViewController.swift in Sources */,
+				608ED6CF277E4CA400E94BD7 /* PostButton.swift in Sources */,
 				608ED69D277936CE00E94BD7 /* ContentView.swift in Sources */,
 				608ED69B277936CE00E94BD7 /* OrtisApp.swift in Sources */,
 			);

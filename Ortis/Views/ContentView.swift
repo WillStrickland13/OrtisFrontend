@@ -13,15 +13,18 @@ struct ContentView: View {
     
     //let vc=ViewController()
     var body: some View {
-        List(users) { user in
-            Text("\(user.firstName)   \(user.lastName)")
-        }
-                .onAppear() {
-                    Api().loadData { (users) in
-                        self.users = users
-                    }
-                }.navigationTitle("User List")
-        }
+        
+            MainMenuView()
+//        List(users) { user in
+//            Text("\(user.firstName)   \(user.lastName)")
+//        }
+//                .onAppear() {
+//                    Api().loadData { (users) in
+//                        self.users = users
+//                    }
+//                }.navigationTitle("User List")
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
