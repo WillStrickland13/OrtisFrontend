@@ -6,5 +6,7 @@ target 'Ortis' do
   use_frameworks!
 
   # Pods for Ortis
-
+  pod 'AWSCore'
+  pod 'AWSS3'
+  pod 'AWSCognitoIdentityProvider'
 end
