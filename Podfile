@@ -9,4 +9,5 @@ target 'Ortis' do
   pod 'AWSCore'
   pod 'AWSS3'
   pod 'AWSCognitoIdentityProvider'
+  pod 'Alamofire', '~> 5.5'
 end
