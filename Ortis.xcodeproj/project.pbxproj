@@ -21,9 +21,12 @@
 		608ED6D1277E4D3400E94BD7 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D0277E4D3400E94BD7 /* ProfileButton.swift */; };
 		608ED6D3277E4DBD00E94BD7 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D2277E4DBD00E94BD7 /* BottomBar.swift */; };
 		608ED6D5277E562F00E94BD7 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D4277E562F00E94BD7 /* UsersView.swift */; };
+		F78FE6F3DBE51FB03765E043 /* Pods_Ortis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06496D20013810F70C53ED07 /* Pods_Ortis.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06496D20013810F70C53ED07 /* Pods_Ortis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ortis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C522FE4F325531D7518C7B1 /* Pods-Ortis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortis.release.xcconfig"; path = "Target Support Files/Pods-Ortis/Pods-Ortis.release.xcconfig"; sourceTree = "<group>"; };
 		608ED697277936CE00E94BD7 /* Ortis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ortis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608ED69A277936CE00E94BD7 /* OrtisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrtisApp.swift; sourceTree = "<group>"; };
 		608ED69C277936CE00E94BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		608ED6D0277E4D3400E94BD7 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
 		608ED6D2277E4DBD00E94BD7 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		608ED6D4277E562F00E94BD7 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		6F01A43940B01719C1387767 /* Pods-Ortis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortis.debug.xcconfig"; path = "Target Support Files/Pods-Ortis/Pods-Ortis.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +50,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F78FE6F3DBE51FB03765E043 /* Pods_Ortis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A5C86B2F17411F80ED1E5FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06496D20013810F70C53ED07 /* Pods_Ortis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		608ED68E277936CD00E94BD7 = {
 			isa = PBXGroup;
 			children = (
 				608ED699277936CE00E94BD7 /* Ortis */,
 				608ED698277936CE00E94BD7 /* Products */,
+				7EB772DF5E1BCFE65D32A402 /* Pods */,
+				1A5C86B2F17411F80ED1E5FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +128,15 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		7EB772DF5E1BCFE65D32A402 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F01A43940B01719C1387767 /* Pods-Ortis.debug.xcconfig */,
+				4C522FE4F325531D7518C7B1 /* Pods-Ortis.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +144,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 608ED6A5277936CE00E94BD7 /* Build configuration list for PBXNativeTarget "Ortis" */;
 			buildPhases = (
+				E6328D66059ECF8AE955988E /* [CP] Check Pods Manifest.lock */,
 				608ED693277936CD00E94BD7 /* Sources */,
 				608ED694277936CD00E94BD7 /* Frameworks */,
 				608ED695277936CD00E94BD7 /* Resources */,
@@ -179,6 +204,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E6328D66059ECF8AE955988E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ortis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		608ED693277936CD00E94BD7 /* Sources */ = {
@@ -310,6 +360,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -319,6 +370,7 @@
 		};
 		608ED6A6277936CE00E94BD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F01A43940B01719C1387767 /* Pods-Ortis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ortis/Preview Content\"";
+				DEVELOPMENT_TEAM = 8R8Y56S66J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -348,6 +401,7 @@
 		};
 		608ED6A7277936CE00E94BD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C522FE4F325531D7518C7B1 /* Pods-Ortis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -355,6 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ortis/Preview Content\"";
+				DEVELOPMENT_TEAM = 8R8Y56S66J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
