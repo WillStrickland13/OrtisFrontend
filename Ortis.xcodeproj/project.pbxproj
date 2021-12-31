@@ -21,6 +21,8 @@
 		608ED6D1277E4D3400E94BD7 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D0277E4D3400E94BD7 /* ProfileButton.swift */; };
 		608ED6D3277E4DBD00E94BD7 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D2277E4DBD00E94BD7 /* BottomBar.swift */; };
 		608ED6D5277E562F00E94BD7 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D4277E562F00E94BD7 /* UsersView.swift */; };
+		608ED6D7277EBD2B00E94BD7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D6277EBD2B00E94BD7 /* ProfileView.swift */; };
+		608ED6D9277EBD5F00E94BD7 /* RegisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D8277EBD5F00E94BD7 /* RegisterPage.swift */; };
 		F78FE6F3DBE51FB03765E043 /* Pods_Ortis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06496D20013810F70C53ED07 /* Pods_Ortis.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		608ED6D0277E4D3400E94BD7 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
 		608ED6D2277E4DBD00E94BD7 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		608ED6D4277E562F00E94BD7 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		608ED6D6277EBD2B00E94BD7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		608ED6D8277EBD5F00E94BD7 /* RegisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
 		6F01A43940B01719C1387767 /* Pods-Ortis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortis.debug.xcconfig"; path = "Target Support Files/Pods-Ortis/Pods-Ortis.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +117,8 @@
 				608ED6C1277D5D3A00E94BD7 /* LaunchScreen.storyboard */,
 				608ED6C9277E479C00E94BD7 /* MainMenuView.swift */,
 				608ED6D4277E562F00E94BD7 /* UsersView.swift */,
+				608ED6D6277EBD2B00E94BD7 /* ProfileView.swift */,
+				608ED6D8277EBD5F00E94BD7 /* RegisterPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,12 +262,14 @@
 				608ED6CA277E479C00E94BD7 /* MainMenuView.swift in Sources */,
 				608ED6CC277E4A3900E94BD7 /* HomeButton.swift in Sources */,
 				608ED6D3277E4DBD00E94BD7 /* BottomBar.swift in Sources */,
+				608ED6D9277EBD5F00E94BD7 /* RegisterPage.swift in Sources */,
 				608ED6AB277D469600E94BD7 /* User.swift in Sources */,
 				608ED6D1277E4D3400E94BD7 /* ProfileButton.swift in Sources */,
 				608ED6D5277E562F00E94BD7 /* UsersView.swift in Sources */,
 				608ED6A92779373F00E94BD7 /* ViewController.swift in Sources */,
 				608ED6CF277E4CA400E94BD7 /* PostButton.swift in Sources */,
 				608ED69D277936CE00E94BD7 /* ContentView.swift in Sources */,
+				608ED6D7277EBD2B00E94BD7 /* ProfileView.swift in Sources */,
 				608ED69B277936CE00E94BD7 /* OrtisApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
