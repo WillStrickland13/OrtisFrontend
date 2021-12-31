@@ -23,6 +23,10 @@
 		608ED6D5277E562F00E94BD7 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D4277E562F00E94BD7 /* UsersView.swift */; };
 		608ED6D7277EBD2B00E94BD7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D6277EBD2B00E94BD7 /* ProfileView.swift */; };
 		608ED6D9277EBD5F00E94BD7 /* RegisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D8277EBD5F00E94BD7 /* RegisterPage.swift */; };
+		608ED6DB277F8A8300E94BD7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6DA277F8A8300E94BD7 /* SignUpView.swift */; };
+		608ED6DD277F967200E94BD7 /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6DC277F967200E94BD7 /* SignUpButton.swift */; };
+		608ED6DF277F970A00E94BD7 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6DE277F970A00E94BD7 /* LoginButton.swift */; };
+		608ED6E1277F9F0A00E94BD7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6E0277F9F0A00E94BD7 /* LoginView.swift */; };
 		F78FE6F3DBE51FB03765E043 /* Pods_Ortis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06496D20013810F70C53ED07 /* Pods_Ortis.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +50,10 @@
 		608ED6D4277E562F00E94BD7 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		608ED6D6277EBD2B00E94BD7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		608ED6D8277EBD5F00E94BD7 /* RegisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
+		608ED6DA277F8A8300E94BD7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		608ED6DC277F967200E94BD7 /* SignUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
+		608ED6DE277F970A00E94BD7 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		608ED6E0277F9F0A00E94BD7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6F01A43940B01719C1387767 /* Pods-Ortis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortis.debug.xcconfig"; path = "Target Support Files/Pods-Ortis/Pods-Ortis.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +127,8 @@
 				608ED6D4277E562F00E94BD7 /* UsersView.swift */,
 				608ED6D6277EBD2B00E94BD7 /* ProfileView.swift */,
 				608ED6D8277EBD5F00E94BD7 /* RegisterPage.swift */,
+				608ED6DA277F8A8300E94BD7 /* SignUpView.swift */,
+				608ED6E0277F9F0A00E94BD7 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +140,8 @@
 				608ED6CE277E4CA400E94BD7 /* PostButton.swift */,
 				608ED6D0277E4D3400E94BD7 /* ProfileButton.swift */,
 				608ED6D2277E4DBD00E94BD7 /* BottomBar.swift */,
+				608ED6DC277F967200E94BD7 /* SignUpButton.swift */,
+				608ED6DE277F970A00E94BD7 /* LoginButton.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -267,10 +279,14 @@
 				608ED6D1277E4D3400E94BD7 /* ProfileButton.swift in Sources */,
 				608ED6D5277E562F00E94BD7 /* UsersView.swift in Sources */,
 				608ED6A92779373F00E94BD7 /* ViewController.swift in Sources */,
+				608ED6DB277F8A8300E94BD7 /* SignUpView.swift in Sources */,
 				608ED6CF277E4CA400E94BD7 /* PostButton.swift in Sources */,
+				608ED6DF277F970A00E94BD7 /* LoginButton.swift in Sources */,
 				608ED69D277936CE00E94BD7 /* ContentView.swift in Sources */,
 				608ED6D7277EBD2B00E94BD7 /* ProfileView.swift in Sources */,
 				608ED69B277936CE00E94BD7 /* OrtisApp.swift in Sources */,
+				608ED6E1277F9F0A00E94BD7 /* LoginView.swift in Sources */,
+				608ED6DD277F967200E94BD7 /* SignUpButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

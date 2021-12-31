@@ -13,8 +13,8 @@ struct ContentView: View {
     
     //let vc=ViewController()
     var body: some View {
-        
-            MainMenuView()
+            RegisterPage()
+            //MainMenuView()
 //        List(users) { user in
 //            Text("\(user.firstName)   \(user.lastName)")
 //        }

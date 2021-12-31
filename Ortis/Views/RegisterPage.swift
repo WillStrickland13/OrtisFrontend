@@ -9,9 +9,20 @@ import SwiftUI
 
 struct RegisterPage: View {
     var body: some View {
-        VStack{
-            Image("Logo").resizable()
-                .frame(width: 75, height: 75)
+        NavigationView{
+            VStack{
+                Image("Logo").resizable()
+                    .frame(width: 100, height: 100)
+                    .padding()
+                   
+                NavigationLink(destination:SignUpView()){
+                    SignUpButton()
+                }
+                NavigationLink(destination:LoginView()){
+                    LoginButton()
+                }
+                
+            }
         }
     }
 }
