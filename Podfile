@@ -10,4 +10,5 @@ target 'Ortis' do
   pod 'AWSS3'
   pod 'AWSCognitoIdentityProvider'
   pod 'Alamofire', '~> 5.5'
+  pod 'SwiftyJSON', '~> 4.0'
 end
