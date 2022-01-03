@@ -17,9 +17,9 @@ struct MainMenuView: View {
                 }.frame(minHeight:0,maxHeight: .infinity,alignment: .bottom)
                 HStack{
                     
-                    NavigationLink(destination:UsersView()){PostButton().padding([.top, .trailing], 20.0)}
-                    NavigationLink(destination:UsersView()){HomeButton().padding([.top, .leading, .trailing], 20.0)}
-                    NavigationLink(destination:UsersView()){ProfileButton().padding([.top, .leading], 20.0)}
+                    NavigationLink(destination:HomePageView()){PostButton().padding([.top, .trailing], 20.0)}
+                    NavigationLink(destination:HomePageView()){HomeButton().padding([.top, .leading, .trailing], 20.0)}
+                    NavigationLink(destination:HomePageView()){ProfileButton().padding([.top, .leading], 20.0)}
                     
                     
                     

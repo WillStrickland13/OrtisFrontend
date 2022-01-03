@@ -14,10 +14,10 @@ struct User: Codable, Identifiable{
     let email: String
     let firstName: String
     let lastName: String
-    let profilePicture: String
+    let profilePicture: String?
     let password: String
     let isPrivate: Int
-    let DOB: String
+    let DOB: String?
 }
 
 class Api : ObservableObject{

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UsersView: View {
+struct HomePageView: View {
     @State var users = [User]()
     var body: some View {
         List(users) { user in
@@ -22,8 +22,8 @@ struct UsersView: View {
 }
 
 
-struct UsersView_Previews: PreviewProvider {
+struct HomePageView_Previews: PreviewProvider {
     static var previews: some View {
-        UsersView()
+        HomePageView()
     }
 }
