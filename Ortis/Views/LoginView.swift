@@ -9,6 +9,7 @@ import SwiftUI
 import Alamofire
 import SwiftyJSON
 var loginVar:Bool=false
+public var currentUser: String=""
 struct LoginView: View {
     @State private var isLoginCorrect = false
     @State var username: String=""
@@ -16,34 +17,42 @@ struct LoginView: View {
     @State var showErrorMessage: Bool = false
     @State var showForgotPassword: Bool = false
     var body: some View {
-        
-        
+            
         VStack{
             Image("Logo").resizable()
                 .frame(width: 100, height: 100, alignment: .center)
             TextField("Username", text: $username)
                 .padding()
-                .background(Color.gray)
+                .background(Color("SecondaryColor"))
+                .foregroundColor(Color("PrimaryColor"))
                 .cornerRadius(5.0)
-                .padding(.vertical, 10.0)
+                .padding(.all, 10.0)
             SecureField("Password", text: $password)
                 .padding()
-                .background(Color.gray)
+                .background(Color("SecondaryColor"))
+                .foregroundColor(Color("PrimaryColor"))
                 .cornerRadius(5.0)
-                .padding(.bottom, 3)
+                .padding([.leading, .bottom, .trailing], 10.0)
+            if(showErrorMessage){
+                Text("Incorrect username or password")
+            }
+            if(showForgotPassword){
+                Text("Forgot your password?")
+            }
             
             ZStack{
-                Capsule()
-                    .fill(Color("SecondaryColor"))
-                    .frame(width: 160, height: 60, alignment: .center)
-                
-                
                 Text("Log In")
-                    .fontWeight(.semibold)
-                    .font(.largeTitle)
-                    .foregroundColor(Color(red: 1.0, green: 0.0,        blue: 0.0, opacity: 1.0))
+                    .fontWeight(.bold)
+                    .font(.title2)
                     .padding()
-                
+                    .background(Color("SecondaryColor"))
+                    .cornerRadius(40)
+                    .foregroundColor(Color("PrimaryColor"))
+                    .padding(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 40)
+                            .stroke(Color("SecondaryColor"), lineWidth: 5)
+                    )
                     .onTapGesture {
                         let params:Parameters=[
                             "username":username,
@@ -70,6 +79,7 @@ struct LoginView: View {
                                 if let authentication = json["message"].string{
                                     if authentication=="Authentication Successful"{
                                         isLoginCorrect.toggle()
+                                        currentUser=username
                                     }
                                     else{
                                         isLoginCorrect=false
