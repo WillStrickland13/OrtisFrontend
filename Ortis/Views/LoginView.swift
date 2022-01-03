@@ -8,11 +8,13 @@
 import SwiftUI
 import Alamofire
 import SwiftyJSON
-var login:Bool=false
+var loginVar:Bool=false
 struct LoginView: View {
     @State private var isLoginCorrect = false
     @State var username: String=""
     @State var password: String=""
+    @State var showErrorMessage: Bool = false
+    @State var showForgotPassword: Bool = false
     var body: some View {
         
         
@@ -29,32 +31,74 @@ struct LoginView: View {
                 .background(Color.gray)
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
-            NavigationLink(destination: HomePageView(),isActive: $isLoginCorrect){
-                ZStack{
-                    Capsule()
-                        .fill(Color("SecondaryColor"))
-                        .frame(width: 160, height: 60, alignment: .center)
-                    
-                    
-                    Text("Log In")
-                        .fontWeight(.semibold)
-                        .font(.largeTitle)
-                        .foregroundColor(Color(red: 1.0, green: 0.0,        blue: 0.0, opacity: 1.0))
-                        .padding()
-                    
-                    
-                    
-                }.padding()
-                    
-            }.onTapGesture {
-                login(user:username,pswd:password)
+            
+            ZStack{
+                Capsule()
+                    .fill(Color("SecondaryColor"))
+                    .frame(width: 160, height: 60, alignment: .center)
                 
-                isLoginCorrect=login
+                
+                Text("Log In")
+                    .fontWeight(.semibold)
+                    .font(.largeTitle)
+                    .foregroundColor(Color(red: 1.0, green: 0.0,        blue: 0.0, opacity: 1.0))
+                    .padding()
+                
+                    .onTapGesture {
+                        let params:Parameters=[
+                            "username":username,
+                            "passwd":password
+                        ]
+                        
+                        AF.request("http://0.0.0.0:8000/users/login", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200 ..< 299).responseJSON { AFdata in
+                            do {
+                                guard let jsonObject = try JSONSerialization.jsonObject(with: AFdata.data!) as? [String: Any] else {
+                                    print("Error: Cannot convert data to JSON object")
+                                    return
+                                }
+                                guard let prettyJsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted) else {
+                                    print("Error: Cannot convert JSON object to Pretty JSON data")
+                                    return
+                                }
+                                guard String(data: prettyJsonData, encoding: .utf8) != nil else {
+                                    print("Error: Could print JSON in String")
+                                    return
+                                }
+                                
+                                //print(prettyPrintedJson["message"])
+                                let json=JSON(AFdata.data as Any)
+                                if let authentication = json["message"].string{
+                                    if authentication=="Authentication Successful"{
+                                        isLoginCorrect.toggle()
+                                    }
+                                    else{
+                                        isLoginCorrect=false
+                                        showErrorMessage=true
+                                        showForgotPassword=true
+                                    }
+                                }
+                            } catch {
+                                print("Error: Trying to convert JSON data to string")
+                                return
+                            }
+                        }                    }
+                
                 
             }
-        }.padding()
+            NavigationLink("",destination: MainMenuView(), isActive: $isLoginCorrect)
+        }
+        
+        
+        
+        
+        
+        
+        
+        
     }
 }
+
+
 
 
 func login(user:String, pswd:String){
@@ -84,11 +128,10 @@ func login(user:String, pswd:String){
             if let authentication = json["message"].string{
                 if authentication=="Authentication Successful"{
                     print("Success")
-                    login=true
+                    loginVar=true
                 }
                 else{
                     print("Fail")
-                    login=false
                 }
             }
         } catch {
