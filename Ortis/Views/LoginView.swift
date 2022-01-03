@@ -45,11 +45,12 @@ struct LoginView: View {
                     
                     
                 }.padding()
-                    .onTapGesture {
-                        login(user:username,pswd:password)
-                        isLoginCorrect=login
-                        
-                    }
+                    
+            }.onTapGesture {
+                login(user:username,pswd:password)
+                
+                isLoginCorrect=login
+                
             }
         }.padding()
     }
@@ -57,6 +58,7 @@ struct LoginView: View {
 
 
 func login(user:String, pswd:String){
+    
     let params:Parameters=[
         "username":user,
         "passwd":pswd
@@ -72,13 +74,13 @@ func login(user:String, pswd:String){
                 print("Error: Cannot convert JSON object to Pretty JSON data")
                 return
             }
-            guard let prettyPrintedJson = String(data: prettyJsonData, encoding: .utf8) else {
+            guard String(data: prettyJsonData, encoding: .utf8) != nil else {
                 print("Error: Could print JSON in String")
                 return
             }
             
             //print(prettyPrintedJson["message"])
-            let json=JSON(AFdata.data)
+            let json=JSON(AFdata.data as Any)
             if let authentication = json["message"].string{
                 if authentication=="Authentication Successful"{
                     print("Success")
