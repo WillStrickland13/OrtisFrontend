@@ -16,53 +16,54 @@ struct SignUpView: View {
     var body: some View {
         VStack{
             Image("Logo").resizable()
-                .padding()
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 .frame(width: 125, height: 125, alignment: .center)
-//            Text("Sign up")
-//                .fontWeight(.semibold)
-//                .font(.largeTitle)
             HStack{
             TextField("First Name", text: $firstName)
                 .padding()
-                .background(Color.gray)
+                .background(Color("SecondaryColor"))
+                .foregroundColor(Color("PrimaryColor"))
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
             TextField("Last Name", text: $lastName)
                 .padding()
-                .background(Color.gray)
+                .background(Color("SecondaryColor"))
+                .foregroundColor(Color("PrimaryColor"))
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
             }
             .padding(.top)
             TextField("Username", text: $username)
                 .padding()
-                .background(Color.gray)
+                .background(Color("SecondaryColor"))
+                .foregroundColor(Color("PrimaryColor"))
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
             
             TextField("Email", text: $email)
                 .padding()
-                .background(Color.gray)
+                .background(Color("SecondaryColor"))
+                .foregroundColor(Color("PrimaryColor"))
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
             SecureField("Password", text: $password)
                 .padding()
-                .background(Color.gray)
+                .background(Color("SecondaryColor"))
+                .foregroundColor(Color("PrimaryColor"))
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
             ZStack{
-                Capsule()
-                    .fill(Color("SecondaryColor"))
-                    .frame(width: 160, height: 60, alignment: .center)
-            
-            
                 Text("Sign Up")
-                    .fontWeight(.semibold)
-                    .font(.largeTitle)
-                    .foregroundColor(Color(red: 1.0, green: 0.0,        blue: 0.0, opacity: 1.0))
+                    .fontWeight(.bold)
+                    .font(.title2)
                     .padding()
-                
-                
+                    .background(Color("SecondaryColor"))
+                    .cornerRadius(40)
+                    .foregroundColor(Color("PrimaryColor"))
+                    .padding(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 40)
+                            .stroke(Color("SecondaryColor"), lineWidth: 5))
             
             }.padding()
                 .onTapGesture {
