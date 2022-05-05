@@ -20,17 +20,19 @@ struct LoginView: View {
             
         VStack{
             Image("Logo").resizable()
-                .frame(width: 100, height: 100, alignment: .center)
+                .frame(width: 175, height: 175, alignment: .center)
+                .padding(.bottom, 140)
+                
             TextField("Username", text: $username)
                 .padding()
-                .background(Color("SecondaryColor"))
-                .foregroundColor(Color("PrimaryColor"))
+                .background(Color(.gray))
+                .foregroundColor(Color(.white))
                 .cornerRadius(5.0)
                 .padding(.all, 10.0)
             SecureField("Password", text: $password)
                 .padding()
-                .background(Color("SecondaryColor"))
-                .foregroundColor(Color("PrimaryColor"))
+                .background(Color(.gray))
+                .foregroundColor(Color(.white))
                 .cornerRadius(5.0)
                 .padding([.leading, .bottom, .trailing], 10.0)
             if(showErrorMessage){
@@ -46,13 +48,10 @@ struct LoginView: View {
                     .font(.title2)
                     .padding()
                     .background(Color("SecondaryColor"))
-                    .cornerRadius(40)
+                    .cornerRadius(15)
                     .foregroundColor(Color("PrimaryColor"))
                     .padding(10)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 40)
-                            .stroke(Color("SecondaryColor"), lineWidth: 5)
-                    )
+                   
                     .onTapGesture {
                         let params:Parameters=[
                             "username":username,
@@ -154,6 +153,6 @@ func login(user:String, pswd:String){
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView().preferredColorScheme(.dark)
     }
 }

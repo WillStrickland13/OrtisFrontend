@@ -12,12 +12,14 @@ struct HomeButton: View {
         Image("HomeButton")
             .resizable()
             .frame(width:40,height:40)
-            
+            .colorInvert()
+
+//made everything else buttons but this cause it seems like it does something already when I click it in build
     }
 }
 
 struct HomeButton_Previews: PreviewProvider {
     static var previews: some View {
-        HomeButton()
+        HomeButton().preferredColorScheme(.dark)
     }
 }

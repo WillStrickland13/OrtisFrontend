@@ -14,10 +14,9 @@
 		608ED6A92779373F00E94BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6A82779373F00E94BD7 /* ViewController.swift */; };
 		608ED6AB277D469600E94BD7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6AA277D469600E94BD7 /* User.swift */; };
 		608ED6C2277D5D3A00E94BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608ED6C1277D5D3A00E94BD7 /* LaunchScreen.storyboard */; };
-		608ED6C6277D5EFE00E94BD7 /* Ortis logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 608ED6C5277D5EFE00E94BD7 /* Ortis logo.png */; };
 		608ED6CA277E479C00E94BD7 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6C9277E479C00E94BD7 /* MainMenuView.swift */; };
 		608ED6CC277E4A3900E94BD7 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6CB277E4A3900E94BD7 /* HomeButton.swift */; };
-		608ED6CF277E4CA400E94BD7 /* PostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6CE277E4CA400E94BD7 /* PostButton.swift */; };
+		608ED6CF277E4CA400E94BD7 /* addButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6CE277E4CA400E94BD7 /* addButton.swift */; };
 		608ED6D1277E4D3400E94BD7 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D0277E4D3400E94BD7 /* ProfileButton.swift */; };
 		608ED6D3277E4DBD00E94BD7 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D2277E4DBD00E94BD7 /* BottomBar.swift */; };
 		608ED6D5277E562F00E94BD7 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6D4277E562F00E94BD7 /* HomePageView.swift */; };
@@ -27,6 +26,50 @@
 		608ED6DD277F967200E94BD7 /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6DC277F967200E94BD7 /* SignUpButton.swift */; };
 		608ED6DF277F970A00E94BD7 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6DE277F970A00E94BD7 /* LoginButton.swift */; };
 		608ED6E1277F9F0A00E94BD7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6E0277F9F0A00E94BD7 /* LoginView.swift */; };
+		B139796727F27097004F161E /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139796627F27097004F161E /* SearchButton.swift */; };
+		B139796927F2868A004F161E /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139796827F2868A004F161E /* FollowButton.swift */; };
+		B1A577E527F5338400FE1FE4 /* SettingsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577E427F5338400FE1FE4 /* SettingsPageView.swift */; };
+		B1A577E727F6326300FE1FE4 /* EditingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577E627F6326300FE1FE4 /* EditingPageView.swift */; };
+		B1A577EB27FCDEFF00FE1FE4 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577EA27FCDEFF00FE1FE4 /* BackButton.swift */; };
+		B1A577ED27FCDFA100FE1FE4 /* OptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577EC27FCDFA100FE1FE4 /* OptionButton.swift */; };
+		B1A577EF27FCE37C00FE1FE4 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577EE27FCE37C00FE1FE4 /* LikeButton.swift */; };
+		B1A577F127FCE41600FE1FE4 /* CommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577F027FCE41600FE1FE4 /* CommentButton.swift */; };
+		B1A577F327FCEB1700FE1FE4 /* SelectedVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577F227FCEB1700FE1FE4 /* SelectedVideo.swift */; };
+		B1A577F527FE8CE000FE1FE4 /* DraftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577F427FE8CE000FE1FE4 /* DraftButton.swift */; };
+		B1A577F727FE8EBA00FE1FE4 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577F627FE8EBA00FE1FE4 /* FilterButton.swift */; };
+		B1A577F927FE90BB00FE1FE4 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577F827FE90BB00FE1FE4 /* TextButton.swift */; };
+		B1A577FB27FE91E500FE1FE4 /* CutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577FA27FE91E500FE1FE4 /* CutButton.swift */; };
+		B1A577FD280659D700FE1FE4 /* SettingsProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577FC280659D700FE1FE4 /* SettingsProfilePicture.swift */; };
+		B1A5780328065E3F00FE1FE4 /* SelectPhotoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5780228065E3F00FE1FE4 /* SelectPhotoButton.swift */; };
+		B1A5780528065EAC00FE1FE4 /* TakePhotoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5780428065EAC00FE1FE4 /* TakePhotoButton.swift */; };
+		B1A578072806601100FE1FE4 /* SettingsUsername.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A578062806601100FE1FE4 /* SettingsUsername.swift */; };
+		B1A57809280662C300FE1FE4 /* SettingsEditBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A57808280662C200FE1FE4 /* SettingsEditBio.swift */; };
+		B1A5780B2806662400FE1FE4 /* SettingsPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5780A2806662400FE1FE4 /* SettingsPhoneNumber.swift */; };
+		B1A5780D2806698000FE1FE4 /* SettingsPrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5780C2806698000FE1FE4 /* SettingsPrivacy.swift */; };
+		B1A5780F28066A9700FE1FE4 /* SettingsNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5780E28066A9700FE1FE4 /* SettingsNotifications.swift */; };
+		B1A5781128066B4400FE1FE4 /* SettingsPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5781028066B4400FE1FE4 /* SettingsPassword.swift */; };
+		B1A57815280A1A8500FE1FE4 /* MusicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A57814280A1A8500FE1FE4 /* MusicButton.swift */; };
+		B1A57819280CB24C00FE1FE4 /* EditingPageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A57818280CB24C00FE1FE4 /* EditingPageButton.swift */; };
+		B1A5781B280CD62B00FE1FE4 /* VideoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5781A280CD62B00FE1FE4 /* VideoDetails.swift */; };
+		B1A5781D280F480A00FE1FE4 /* TrashButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5781C280F480A00FE1FE4 /* TrashButton.swift */; };
+		B1A5781F2810B2F100FE1FE4 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5781E2810B2F100FE1FE4 /* PlayButton.swift */; };
+		B1A578232811F0DE00FE1FE4 /* FollowersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A578222811F0DE00FE1FE4 /* FollowersPage.swift */; };
+		B1A578252811F26500FE1FE4 /* UsernameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A578242811F26500FE1FE4 /* UsernameButton.swift */; };
+		B1A578272811F3F600FE1FE4 /* ProfilePicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A578262811F3F600FE1FE4 /* ProfilePicButton.swift */; };
+		B1A578292811F4E100FE1FE4 /* FollowingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A578282811F4E100FE1FE4 /* FollowingPage.swift */; };
+		B1A5782B2811F7A300FE1FE4 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5782A2811F7A300FE1FE4 /* TitleButton.swift */; };
+		B1A5782D2811FADA00FE1FE4 /* ThumbnailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5782C2811FADA00FE1FE4 /* ThumbnailButton.swift */; };
+		B1A5782F2812178C00FE1FE4 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5782E2812178C00FE1FE4 /* SaveButton.swift */; };
+		B1A57831281245F400FE1FE4 /* DiscoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A57830281245F400FE1FE4 /* DiscoverButton.swift */; };
+		B1A578332812468C00FE1FE4 /* DiscoverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A578322812468C00FE1FE4 /* DiscoverPage.swift */; };
+		B1A5783528124CC600FE1FE4 /* PopularThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5783428124CC600FE1FE4 /* PopularThumbnail.swift */; };
+		B1A578392816FE1900FE1FE4 /* ThumbnailDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A578382816FE1800FE1FE4 /* ThumbnailDetails.swift */; };
+		B1A5783B281742E600FE1FE4 /* ExpandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5783A281742E600FE1FE4 /* ExpandButton.swift */; };
+		B1A5783D2817967D00FE1FE4 /* ProfileThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5783C2817967D00FE1FE4 /* ProfileThumbnail.swift */; };
+		B1A5783F2818F23E00FE1FE4 /* Followers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5783E2818F23E00FE1FE4 /* Followers.swift */; };
+		B1A578412818F30B00FE1FE4 /* Following.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A578402818F30B00FE1FE4 /* Following.swift */; };
+		B1A57843281A1AAD00FE1FE4 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A57842281A1AAD00FE1FE4 /* NextButton.swift */; };
+		B1BF405127F4000800763112 /* Settingsbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BF405027F4000800763112 /* Settingsbutton.swift */; };
 		F78FE6F3DBE51FB03765E043 /* Pods_Ortis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06496D20013810F70C53ED07 /* Pods_Ortis.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +84,9 @@
 		608ED6A82779373F00E94BD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		608ED6AA277D469600E94BD7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		608ED6C1277D5D3A00E94BD7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		608ED6C5277D5EFE00E94BD7 /* Ortis logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ortis logo.png"; path = "../../Downloads/Ortis logo.png"; sourceTree = "<group>"; };
 		608ED6C9277E479C00E94BD7 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		608ED6CB277E4A3900E94BD7 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
-		608ED6CE277E4CA400E94BD7 /* PostButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostButton.swift; sourceTree = "<group>"; };
+		608ED6CE277E4CA400E94BD7 /* addButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addButton.swift; sourceTree = "<group>"; };
 		608ED6D0277E4D3400E94BD7 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
 		608ED6D2277E4DBD00E94BD7 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		608ED6D4277E562F00E94BD7 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
@@ -55,6 +97,50 @@
 		608ED6DE277F970A00E94BD7 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		608ED6E0277F9F0A00E94BD7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6F01A43940B01719C1387767 /* Pods-Ortis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortis.debug.xcconfig"; path = "Target Support Files/Pods-Ortis/Pods-Ortis.debug.xcconfig"; sourceTree = "<group>"; };
+		B139796627F27097004F161E /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
+		B139796827F2868A004F161E /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
+		B1A577E427F5338400FE1FE4 /* SettingsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPageView.swift; sourceTree = "<group>"; };
+		B1A577E627F6326300FE1FE4 /* EditingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingPageView.swift; sourceTree = "<group>"; };
+		B1A577EA27FCDEFF00FE1FE4 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		B1A577EC27FCDFA100FE1FE4 /* OptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButton.swift; sourceTree = "<group>"; };
+		B1A577EE27FCE37C00FE1FE4 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		B1A577F027FCE41600FE1FE4 /* CommentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentButton.swift; sourceTree = "<group>"; };
+		B1A577F227FCEB1700FE1FE4 /* SelectedVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedVideo.swift; sourceTree = "<group>"; };
+		B1A577F427FE8CE000FE1FE4 /* DraftButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftButton.swift; sourceTree = "<group>"; };
+		B1A577F627FE8EBA00FE1FE4 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
+		B1A577F827FE90BB00FE1FE4 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		B1A577FA27FE91E500FE1FE4 /* CutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutButton.swift; sourceTree = "<group>"; };
+		B1A577FC280659D700FE1FE4 /* SettingsProfilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfilePicture.swift; sourceTree = "<group>"; };
+		B1A5780228065E3F00FE1FE4 /* SelectPhotoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotoButton.swift; sourceTree = "<group>"; };
+		B1A5780428065EAC00FE1FE4 /* TakePhotoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoButton.swift; sourceTree = "<group>"; };
+		B1A578062806601100FE1FE4 /* SettingsUsername.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUsername.swift; sourceTree = "<group>"; };
+		B1A57808280662C200FE1FE4 /* SettingsEditBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditBio.swift; sourceTree = "<group>"; };
+		B1A5780A2806662400FE1FE4 /* SettingsPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPhoneNumber.swift; sourceTree = "<group>"; };
+		B1A5780C2806698000FE1FE4 /* SettingsPrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacy.swift; sourceTree = "<group>"; };
+		B1A5780E28066A9700FE1FE4 /* SettingsNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNotifications.swift; sourceTree = "<group>"; };
+		B1A5781028066B4400FE1FE4 /* SettingsPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPassword.swift; sourceTree = "<group>"; };
+		B1A57814280A1A8500FE1FE4 /* MusicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicButton.swift; sourceTree = "<group>"; };
+		B1A57818280CB24C00FE1FE4 /* EditingPageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingPageButton.swift; sourceTree = "<group>"; };
+		B1A5781A280CD62B00FE1FE4 /* VideoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetails.swift; sourceTree = "<group>"; };
+		B1A5781C280F480A00FE1FE4 /* TrashButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashButton.swift; sourceTree = "<group>"; };
+		B1A5781E2810B2F100FE1FE4 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		B1A578222811F0DE00FE1FE4 /* FollowersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersPage.swift; sourceTree = "<group>"; };
+		B1A578242811F26500FE1FE4 /* UsernameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameButton.swift; sourceTree = "<group>"; };
+		B1A578262811F3F600FE1FE4 /* ProfilePicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicButton.swift; sourceTree = "<group>"; };
+		B1A578282811F4E100FE1FE4 /* FollowingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingPage.swift; sourceTree = "<group>"; };
+		B1A5782A2811F7A300FE1FE4 /* TitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		B1A5782C2811FADA00FE1FE4 /* ThumbnailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailButton.swift; sourceTree = "<group>"; };
+		B1A5782E2812178C00FE1FE4 /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
+		B1A57830281245F400FE1FE4 /* DiscoverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverButton.swift; sourceTree = "<group>"; };
+		B1A578322812468C00FE1FE4 /* DiscoverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPage.swift; sourceTree = "<group>"; };
+		B1A5783428124CC600FE1FE4 /* PopularThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularThumbnail.swift; sourceTree = "<group>"; };
+		B1A578382816FE1800FE1FE4 /* ThumbnailDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailDetails.swift; sourceTree = "<group>"; };
+		B1A5783A281742E600FE1FE4 /* ExpandButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandButton.swift; sourceTree = "<group>"; };
+		B1A5783C2817967D00FE1FE4 /* ProfileThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThumbnail.swift; sourceTree = "<group>"; };
+		B1A5783E2818F23E00FE1FE4 /* Followers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Followers.swift; sourceTree = "<group>"; };
+		B1A578402818F30B00FE1FE4 /* Following.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Following.swift; sourceTree = "<group>"; };
+		B1A57842281A1AAD00FE1FE4 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
+		B1BF405027F4000800763112 /* Settingsbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settingsbutton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +186,6 @@
 			children = (
 				608ED69A277936CE00E94BD7 /* OrtisApp.swift */,
 				608ED69E277936CE00E94BD7 /* Assets.xcassets */,
-				608ED6C5277D5EFE00E94BD7 /* Ortis logo.png */,
 				608ED6C0277D5CE500E94BD7 /* Views */,
 				608ED6A0277936CE00E94BD7 /* Preview Content */,
 				608ED6AA277D469600E94BD7 /* User.swift */,
@@ -121,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				608ED69C277936CE00E94BD7 /* ContentView.swift */,
+				B1A577E627F6326300FE1FE4 /* EditingPageView.swift */,
 				608ED6A82779373F00E94BD7 /* ViewController.swift */,
 				608ED6C1277D5D3A00E94BD7 /* LaunchScreen.storyboard */,
 				608ED6C9277E479C00E94BD7 /* MainMenuView.swift */,
@@ -129,6 +215,19 @@
 				608ED6D8277EBD5F00E94BD7 /* RegisterPage.swift */,
 				608ED6DA277F8A8300E94BD7 /* SignUpView.swift */,
 				608ED6E0277F9F0A00E94BD7 /* LoginView.swift */,
+				B1A577E427F5338400FE1FE4 /* SettingsPageView.swift */,
+				B1A578222811F0DE00FE1FE4 /* FollowersPage.swift */,
+				B1A577FC280659D700FE1FE4 /* SettingsProfilePicture.swift */,
+				B1A577F227FCEB1700FE1FE4 /* SelectedVideo.swift */,
+				B1A578062806601100FE1FE4 /* SettingsUsername.swift */,
+				B1A57808280662C200FE1FE4 /* SettingsEditBio.swift */,
+				B1A5780A2806662400FE1FE4 /* SettingsPhoneNumber.swift */,
+				B1A5780C2806698000FE1FE4 /* SettingsPrivacy.swift */,
+				B1A5780E28066A9700FE1FE4 /* SettingsNotifications.swift */,
+				B1A5781028066B4400FE1FE4 /* SettingsPassword.swift */,
+				B1A5781A280CD62B00FE1FE4 /* VideoDetails.swift */,
+				B1A578282811F4E100FE1FE4 /* FollowingPage.swift */,
+				B1A578322812468C00FE1FE4 /* DiscoverPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,11 +236,41 @@
 			isa = PBXGroup;
 			children = (
 				608ED6CB277E4A3900E94BD7 /* HomeButton.swift */,
-				608ED6CE277E4CA400E94BD7 /* PostButton.swift */,
+				608ED6CE277E4CA400E94BD7 /* addButton.swift */,
 				608ED6D0277E4D3400E94BD7 /* ProfileButton.swift */,
 				608ED6D2277E4DBD00E94BD7 /* BottomBar.swift */,
 				608ED6DC277F967200E94BD7 /* SignUpButton.swift */,
 				608ED6DE277F970A00E94BD7 /* LoginButton.swift */,
+				B139796627F27097004F161E /* SearchButton.swift */,
+				B139796827F2868A004F161E /* FollowButton.swift */,
+				B1BF405027F4000800763112 /* Settingsbutton.swift */,
+				B1A577EA27FCDEFF00FE1FE4 /* BackButton.swift */,
+				B1A577EC27FCDFA100FE1FE4 /* OptionButton.swift */,
+				B1A577EE27FCE37C00FE1FE4 /* LikeButton.swift */,
+				B1A577F027FCE41600FE1FE4 /* CommentButton.swift */,
+				B1A577F427FE8CE000FE1FE4 /* DraftButton.swift */,
+				B1A577F627FE8EBA00FE1FE4 /* FilterButton.swift */,
+				B1A577F827FE90BB00FE1FE4 /* TextButton.swift */,
+				B1A577FA27FE91E500FE1FE4 /* CutButton.swift */,
+				B1A5780228065E3F00FE1FE4 /* SelectPhotoButton.swift */,
+				B1A5780428065EAC00FE1FE4 /* TakePhotoButton.swift */,
+				B1A57814280A1A8500FE1FE4 /* MusicButton.swift */,
+				B1A57818280CB24C00FE1FE4 /* EditingPageButton.swift */,
+				B1A5781C280F480A00FE1FE4 /* TrashButton.swift */,
+				B1A5781E2810B2F100FE1FE4 /* PlayButton.swift */,
+				B1A578242811F26500FE1FE4 /* UsernameButton.swift */,
+				B1A578262811F3F600FE1FE4 /* ProfilePicButton.swift */,
+				B1A5782A2811F7A300FE1FE4 /* TitleButton.swift */,
+				B1A5782C2811FADA00FE1FE4 /* ThumbnailButton.swift */,
+				B1A5782E2812178C00FE1FE4 /* SaveButton.swift */,
+				B1A57830281245F400FE1FE4 /* DiscoverButton.swift */,
+				B1A5783428124CC600FE1FE4 /* PopularThumbnail.swift */,
+				B1A578382816FE1800FE1FE4 /* ThumbnailDetails.swift */,
+				B1A5783A281742E600FE1FE4 /* ExpandButton.swift */,
+				B1A5783C2817967D00FE1FE4 /* ProfileThumbnail.swift */,
+				B1A5783E2818F23E00FE1FE4 /* Followers.swift */,
+				B1A578402818F30B00FE1FE4 /* Following.swift */,
+				B1A57842281A1AAD00FE1FE4 /* NextButton.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -218,7 +347,6 @@
 				608ED6C2277D5D3A00E94BD7 /* LaunchScreen.storyboard in Resources */,
 				608ED6A2277936CE00E94BD7 /* Preview Assets.xcassets in Resources */,
 				608ED69F277936CE00E94BD7 /* Assets.xcassets in Resources */,
-				608ED6C6277D5EFE00E94BD7 /* Ortis logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,21 +400,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				608ED6CA277E479C00E94BD7 /* MainMenuView.swift in Sources */,
+				B1A57815280A1A8500FE1FE4 /* MusicButton.swift in Sources */,
 				608ED6CC277E4A3900E94BD7 /* HomeButton.swift in Sources */,
+				B1A577EB27FCDEFF00FE1FE4 /* BackButton.swift in Sources */,
+				B1A5781B280CD62B00FE1FE4 /* VideoDetails.swift in Sources */,
+				B1A5781F2810B2F100FE1FE4 /* PlayButton.swift in Sources */,
+				B1A5782D2811FADA00FE1FE4 /* ThumbnailButton.swift in Sources */,
+				B139796927F2868A004F161E /* FollowButton.swift in Sources */,
+				B1A577EF27FCE37C00FE1FE4 /* LikeButton.swift in Sources */,
 				608ED6D3277E4DBD00E94BD7 /* BottomBar.swift in Sources */,
 				608ED6D9277EBD5F00E94BD7 /* RegisterPage.swift in Sources */,
+				B1A5782F2812178C00FE1FE4 /* SaveButton.swift in Sources */,
+				B1BF405127F4000800763112 /* Settingsbutton.swift in Sources */,
 				608ED6AB277D469600E94BD7 /* User.swift in Sources */,
+				B1A5781D280F480A00FE1FE4 /* TrashButton.swift in Sources */,
+				B1A578272811F3F600FE1FE4 /* ProfilePicButton.swift in Sources */,
+				B1A5782B2811F7A300FE1FE4 /* TitleButton.swift in Sources */,
+				B1A577ED27FCDFA100FE1FE4 /* OptionButton.swift in Sources */,
+				B1A577FB27FE91E500FE1FE4 /* CutButton.swift in Sources */,
+				B1A5783F2818F23E00FE1FE4 /* Followers.swift in Sources */,
 				608ED6D1277E4D3400E94BD7 /* ProfileButton.swift in Sources */,
+				B1A5780B2806662400FE1FE4 /* SettingsPhoneNumber.swift in Sources */,
+				B1A578392816FE1900FE1FE4 /* ThumbnailDetails.swift in Sources */,
+				B1A578332812468C00FE1FE4 /* DiscoverPage.swift in Sources */,
+				B1A577F127FCE41600FE1FE4 /* CommentButton.swift in Sources */,
 				608ED6D5277E562F00E94BD7 /* HomePageView.swift in Sources */,
+				B139796727F27097004F161E /* SearchButton.swift in Sources */,
+				B1A578232811F0DE00FE1FE4 /* FollowersPage.swift in Sources */,
 				608ED6A92779373F00E94BD7 /* ViewController.swift in Sources */,
+				B1A57831281245F400FE1FE4 /* DiscoverButton.swift in Sources */,
+				B1A57843281A1AAD00FE1FE4 /* NextButton.swift in Sources */,
 				608ED6DB277F8A8300E94BD7 /* SignUpView.swift in Sources */,
-				608ED6CF277E4CA400E94BD7 /* PostButton.swift in Sources */,
+				608ED6CF277E4CA400E94BD7 /* addButton.swift in Sources */,
+				B1A577F927FE90BB00FE1FE4 /* TextButton.swift in Sources */,
 				608ED6DF277F970A00E94BD7 /* LoginButton.swift in Sources */,
+				B1A5783B281742E600FE1FE4 /* ExpandButton.swift in Sources */,
+				B1A5783D2817967D00FE1FE4 /* ProfileThumbnail.swift in Sources */,
+				B1A5780F28066A9700FE1FE4 /* SettingsNotifications.swift in Sources */,
+				B1A578412818F30B00FE1FE4 /* Following.swift in Sources */,
+				B1A578292811F4E100FE1FE4 /* FollowingPage.swift in Sources */,
+				B1A577E527F5338400FE1FE4 /* SettingsPageView.swift in Sources */,
 				608ED69D277936CE00E94BD7 /* ContentView.swift in Sources */,
+				B1A577F327FCEB1700FE1FE4 /* SelectedVideo.swift in Sources */,
 				608ED6D7277EBD2B00E94BD7 /* ProfileView.swift in Sources */,
+				B1A5783528124CC600FE1FE4 /* PopularThumbnail.swift in Sources */,
+				B1A5780328065E3F00FE1FE4 /* SelectPhotoButton.swift in Sources */,
+				B1A57819280CB24C00FE1FE4 /* EditingPageButton.swift in Sources */,
 				608ED69B277936CE00E94BD7 /* OrtisApp.swift in Sources */,
+				B1A57809280662C300FE1FE4 /* SettingsEditBio.swift in Sources */,
+				B1A577FD280659D700FE1FE4 /* SettingsProfilePicture.swift in Sources */,
+				B1A577F527FE8CE000FE1FE4 /* DraftButton.swift in Sources */,
+				B1A5780D2806698000FE1FE4 /* SettingsPrivacy.swift in Sources */,
 				608ED6E1277F9F0A00E94BD7 /* LoginView.swift in Sources */,
+				B1A5781128066B4400FE1FE4 /* SettingsPassword.swift in Sources */,
+				B1A577E727F6326300FE1FE4 /* EditingPageView.swift in Sources */,
+				B1A578072806601100FE1FE4 /* SettingsUsername.swift in Sources */,
 				608ED6DD277F967200E94BD7 /* SignUpButton.swift in Sources */,
+				B1A578252811F26500FE1FE4 /* UsernameButton.swift in Sources */,
+				B1A5780528065EAC00FE1FE4 /* TakePhotoButton.swift in Sources */,
+				B1A577F727FE8EBA00FE1FE4 /* FilterButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +592,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ortis/Preview Content\"";
-				DEVELOPMENT_TEAM = 8R8Y56S66J;
+				DEVELOPMENT_TEAM = 53GKY5374D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -433,7 +605,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Ortis.Ortis;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blaisewitternisthecreator.Ortis9737;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -448,10 +620,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ortis/Preview Content\"";
-				DEVELOPMENT_TEAM = 8R8Y56S66J;
+				DEVELOPMENT_TEAM = 53GKY5374D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -464,8 +637,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Ortis.Ortis;
+				PRODUCT_BUNDLE_IDENTIFIER = BlaiseWittern.Ortis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

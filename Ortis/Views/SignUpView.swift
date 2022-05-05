@@ -16,40 +16,40 @@ struct SignUpView: View {
     var body: some View {
         VStack{
             Image("Logo").resizable()
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                .frame(width: 125, height: 125, alignment: .center)
+                .frame(width: 175, height: 175, alignment: .center)
+                .padding(.bottom, 10)
             HStack{
             TextField("First Name", text: $firstName)
                 .padding()
-                .background(Color("SecondaryColor"))
-                .foregroundColor(Color("PrimaryColor"))
+                .background(Color(.gray))
+                .foregroundColor(Color(.white))
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
             TextField("Last Name", text: $lastName)
                 .padding()
-                .background(Color("SecondaryColor"))
-                .foregroundColor(Color("PrimaryColor"))
+                .background(Color(.gray))
+                .foregroundColor(Color(.white))
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
             }
             .padding(.top)
             TextField("Username", text: $username)
                 .padding()
-                .background(Color("SecondaryColor"))
-                .foregroundColor(Color("PrimaryColor"))
+                .background(Color(.gray))
+                .foregroundColor(Color(.white))
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
             
             TextField("Email", text: $email)
                 .padding()
-                .background(Color("SecondaryColor"))
-                .foregroundColor(Color("PrimaryColor"))
+                .background(Color(.gray))
+                .foregroundColor(Color(.white))
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
             SecureField("Password", text: $password)
                 .padding()
-                .background(Color("SecondaryColor"))
-                .foregroundColor(Color("PrimaryColor"))
+                .background(Color(.gray))
+                .foregroundColor(Color(.white))
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
             ZStack{
@@ -58,12 +58,11 @@ struct SignUpView: View {
                     .font(.title2)
                     .padding()
                     .background(Color("SecondaryColor"))
-                    .cornerRadius(40)
+                    .cornerRadius(15)
                     .foregroundColor(Color("PrimaryColor"))
                     .padding(10)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 40)
-                            .stroke(Color("SecondaryColor"), lineWidth: 5))
+                    
+                    
             
             }.padding()
                 .onTapGesture {
@@ -91,6 +90,6 @@ func postUser(first:String, last:String, user:String, em:String, pswd:String){
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        SignUpView().preferredColorScheme(.dark)
     }
 }

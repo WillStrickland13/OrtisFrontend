@@ -13,8 +13,27 @@ struct ContentView: View {
     
     //let vc=ViewController()
     var body: some View {
-            RegisterPage()
-            //MainMenuView()
+              
+            //RegisterPage()
+            //SignUpView()
+            //LoginView()
+         //   MainMenuView()
+           // ProfileView()
+            DiscoverPage()
+            //SelectedVideo()
+           // EditingPageView()
+            //VideoDetails()
+            //FollowersPage()
+            //FollowingPage()
+            //SettingsPageView()
+            //SettingsProfilePicture()
+            //SettingsEditBio()
+            //SettingsPhoneNumber()
+            //SettingsPrivacy()
+            //SettingsUsername()
+            //SettingsNotifications()
+            //SettingsPassword()
+           
 //        List(users) { user in
 //            Text("\(user.firstName)   \(user.lastName)")
 //        }
@@ -29,6 +48,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().preferredColorScheme(.dark)
     }
 }
