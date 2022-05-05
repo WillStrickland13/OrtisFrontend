@@ -10,9 +10,10 @@ import SwiftUI
 struct SignUpButton: View {
     var body: some View {
         ZStack{
-            Capsule()
+            RoundedRectangle(cornerRadius: 15)
                 .fill(Color("SecondaryColor"))
                 .frame(width: 160, height: 60, alignment: .center)
+                
         
         
             Text("Sign Up")
@@ -29,6 +30,6 @@ struct SignUpButton: View {
 
 struct SignUpButton_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpButton()
+        SignUpButton().preferredColorScheme(.dark)
     }
 }

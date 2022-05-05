@@ -11,24 +11,39 @@ struct RegisterPage: View {
     var body: some View {
         NavigationView{
             VStack{
-                Image("Logo").resizable()
-                    .frame(width: 100, height: 100)
-                    .padding()
+                Text("Ortis".uppercased())
+                    .fontWeight(.semibold)
+                    .font(.largeTitle)
+                    .kerning(10.0)
+                    .foregroundColor(Color("SecondaryColor"))
+                    
+                    
                    
-                NavigationLink(destination:SignUpView()){
-                    SignUpButton()
+                    
+                    Image("Logo").resizable()
+                        .frame(width: 120, height: 120)
+                        .padding()
+                        
+                       
+                    NavigationLink(destination:SignUpView()){
+                        SignUpButton()
+                    }
+                    NavigationLink(destination:LoginView()){
+                        LoginButton()
+                           
+                    }
+                    
                 }
-                NavigationLink(destination:LoginView()){
-                    LoginButton()
-                }
-                
-            }
+            
         }
+        
     }
 }
 
 struct RegisterPage_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterPage()
+        RegisterPage().preferredColorScheme(.dark)
+        
     }
 }
+
