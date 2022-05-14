@@ -13,35 +13,16 @@ struct ContentView: View {
     
     //let vc=ViewController()
     var body: some View {
-              
-            //RegisterPage()
-            //SignUpView()
+        
+        NavigationView{
+            //ProfileView()
+            RegisterPage()
+            
             //LoginView()
-         //   MainMenuView()
-           // ProfileView()
-            DiscoverPage()
-            //SelectedVideo()
-           // EditingPageView()
-            //VideoDetails()
-            //FollowersPage()
-            //FollowingPage()
-            //SettingsPageView()
-            //SettingsProfilePicture()
-            //SettingsEditBio()
-            //SettingsPhoneNumber()
-            //SettingsPrivacy()
-            //SettingsUsername()
-            //SettingsNotifications()
-            //SettingsPassword()
-           
-//        List(users) { user in
-//            Text("\(user.firstName)   \(user.lastName)")
-//        }
-//                .onAppear() {
-//                    Api().loadData { (users) in
-//                        self.users = users
-//                    }
-//                }.navigationTitle("User List")
+            //HomePageView()
+            //MainMenuView()
+            
+        }
     }
     
 }

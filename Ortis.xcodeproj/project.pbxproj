@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6002BDFA282EC43A0068B19A /* LoginServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6002BDF9282EC43A0068B19A /* LoginServices.swift */; };
+		6002BDFC282EC4EF0068B19A /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6002BDFB282EC4EF0068B19A /* UserServices.swift */; };
 		608ED69B277936CE00E94BD7 /* OrtisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED69A277936CE00E94BD7 /* OrtisApp.swift */; };
 		608ED69D277936CE00E94BD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED69C277936CE00E94BD7 /* ContentView.swift */; };
 		608ED69F277936CE00E94BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608ED69E277936CE00E94BD7 /* Assets.xcassets */; };
@@ -76,6 +78,8 @@
 /* Begin PBXFileReference section */
 		06496D20013810F70C53ED07 /* Pods_Ortis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ortis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C522FE4F325531D7518C7B1 /* Pods-Ortis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortis.release.xcconfig"; path = "Target Support Files/Pods-Ortis/Pods-Ortis.release.xcconfig"; sourceTree = "<group>"; };
+		6002BDF9282EC43A0068B19A /* LoginServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServices.swift; sourceTree = "<group>"; };
+		6002BDFB282EC4EF0068B19A /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		608ED697277936CE00E94BD7 /* Ortis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ortis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608ED69A277936CE00E94BD7 /* OrtisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrtisApp.swift; sourceTree = "<group>"; };
 		608ED69C277936CE00E94BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -163,6 +167,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6002BDF2282EC0430068B19A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6002BDF9282EC43A0068B19A /* LoginServices.swift */,
+				6002BDFB282EC4EF0068B19A /* UserServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		608ED68E277936CD00E94BD7 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +197,7 @@
 		608ED699277936CE00E94BD7 /* Ortis */ = {
 			isa = PBXGroup;
 			children = (
+				6002BDF2282EC0430068B19A /* Services */,
 				608ED69A277936CE00E94BD7 /* OrtisApp.swift */,
 				608ED69E277936CE00E94BD7 /* Assets.xcassets */,
 				608ED6C0277D5CE500E94BD7 /* Views */,
@@ -422,6 +436,7 @@
 				608ED6D1277E4D3400E94BD7 /* ProfileButton.swift in Sources */,
 				B1A5780B2806662400FE1FE4 /* SettingsPhoneNumber.swift in Sources */,
 				B1A578392816FE1900FE1FE4 /* ThumbnailDetails.swift in Sources */,
+				6002BDFA282EC43A0068B19A /* LoginServices.swift in Sources */,
 				B1A578332812468C00FE1FE4 /* DiscoverPage.swift in Sources */,
 				B1A577F127FCE41600FE1FE4 /* CommentButton.swift in Sources */,
 				608ED6D5277E562F00E94BD7 /* HomePageView.swift in Sources */,
@@ -440,6 +455,7 @@
 				B1A578412818F30B00FE1FE4 /* Following.swift in Sources */,
 				B1A578292811F4E100FE1FE4 /* FollowingPage.swift in Sources */,
 				B1A577E527F5338400FE1FE4 /* SettingsPageView.swift in Sources */,
+				6002BDFC282EC4EF0068B19A /* UserServices.swift in Sources */,
 				608ED69D277936CE00E94BD7 /* ContentView.swift in Sources */,
 				B1A577F327FCEB1700FE1FE4 /* SelectedVideo.swift in Sources */,
 				608ED6D7277EBD2B00E94BD7 /* ProfileView.swift in Sources */,
@@ -592,7 +608,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ortis/Preview Content\"";
-				DEVELOPMENT_TEAM = 53GKY5374D;
+				DEVELOPMENT_TEAM = 8R8Y56S66J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -605,7 +621,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.blaisewitternisthecreator.Ortis9737;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillStrickland.Ortis9737;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -624,7 +640,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ortis/Preview Content\"";
-				DEVELOPMENT_TEAM = 53GKY5374D;
+				DEVELOPMENT_TEAM = 8R8Y56S66J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -637,7 +653,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = BlaiseWittern.Ortis;
+				PRODUCT_BUNDLE_IDENTIFIER = WillStrickland.Ortis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

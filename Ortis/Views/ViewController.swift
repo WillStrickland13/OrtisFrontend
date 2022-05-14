@@ -10,11 +10,19 @@ import Alamofire
 import SwiftUI
 class ViewController:UIViewController{
     
+
+    let us=UserServices()
     override func viewDidLoad() {
+
         super.viewDidLoad()
-        getData(from: url){ result in
-            VStack{Text(result)}
-        }
+        self.navigationItem.setHidesBackButton(true,animated: false)
+        print("printing username!")
+
+        
+//        getData(from: url){ result in
+//            VStack{Text(result)}
+//        }
+
     }
     var str = ""
     public func displayName()->String{
@@ -28,12 +36,12 @@ class ViewController:UIViewController{
     }
     private func getData(from url: String, completion: @escaping(String)->Void){
         
-        let task = URLSession.shared.dataTask(with: URL(string:url)!, completionHandler: {data, response, error in
+        let task = URLSession.shared.dataTask(with: URL(string:url+"/users")!, completionHandler: {data, response, error in
 
             guard let data =  data else{ return }
 
             do{
-                let result = try JSONDecoder().decode([MyResult].self, from: data)
+                let result = try JSONDecoder().decode([UserInfo].self, from: data)
 
                 completion(result.first!.firstName)
             }
@@ -64,22 +72,33 @@ class ViewController:UIViewController{
           }
         }.resume()
     }
+    
  
     
 }
 
-let url = "http://0.0.0.0:8000/users"
+public var url = "http://0.0.0.0:8000"
+public var firstName=""
+public var lastName=""
+public var email=""
+public var profilePicture=""
+public var isPrivate=0
+public var DOB=""
+public var phoneNumber=0
+public var bio=""
+public var userId=0
 
 
-
-
-struct MyResult: Codable{
-    let username: String
-    let email: String
+struct UserInfo: Codable, Identifiable{
+    let id: Int
+    let username: String!
+    let email: String!
     let firstName: String
     let lastName: String
-    let profilePicture: String
-    let password: String
-    let isPrivate: Int
-    let DOB: String
+    let profilePicture: String!
+    let password: String!
+    let isPrivate: Int!
+    let DOB: String!
+    let phoneNumber: Int!
+    let bio:String!
 }

@@ -14,7 +14,7 @@ struct SettingsPageView: View {
         
         VStack(alignment: .leading ){
             HStack {
-                NavigationLink(destination:ProfileView()){BackButton()}.padding([.top, .bottom ], 20)
+                NavigationLink(destination:ProfileView().navigationBarBackButtonHidden(true)){BackButton()}.padding([.top, .bottom ], 20)
                     .padding(.leading,20)
                     //destination is previous page
                 

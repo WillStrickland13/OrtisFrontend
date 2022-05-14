@@ -11,7 +11,7 @@ struct SelectedVideo: View {
     @State var comment: String = ""
     var body: some View {
         
-        NavigationView{
+        
         VStack {
             
         
@@ -186,7 +186,7 @@ struct SelectedVideo: View {
         
        
     }
-}
+
 
 struct SelectedVideo_Previews: PreviewProvider {
     static var previews: some View {

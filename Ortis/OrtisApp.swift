@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct OrtisApp: App {
-    
     var body: some Scene {
         
         WindowGroup {
             
-            ContentView()
+            
+            ContentView().preferredColorScheme(.dark)
             
         }
         

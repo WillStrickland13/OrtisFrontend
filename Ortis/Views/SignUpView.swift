@@ -13,6 +13,7 @@ struct SignUpView: View {
     @State var username: String = ""
     @State var email: String = ""
     @State var password: String = ""
+    @State var phNumber: String = ""
     var body: some View {
         VStack{
             Image("Logo").resizable()
@@ -46,6 +47,12 @@ struct SignUpView: View {
                 .foregroundColor(Color(.white))
                 .cornerRadius(5.0)
                 .padding(.bottom, 3)
+            TextField("Phone Number", text: $phNumber)
+                .padding()
+                .background(Color(.gray))
+                .foregroundColor(Color(.white))
+                .cornerRadius(5.0)
+                .padding(.bottom, 3)
             SecureField("Password", text: $password)
                 .padding()
                 .background(Color(.gray))
@@ -67,20 +74,21 @@ struct SignUpView: View {
             }.padding()
                 .onTapGesture {
                     print(firstName,lastName,username,email,password)
-                    postUser(first:firstName,last:lastName,user:username,em:email,pswd:password)
+                    postUser(first:firstName,last:lastName,user:username,em:email,pswd:password,phoneNum:phNumber)
                 }
         }.padding()
             
     }
 }
 
-func postUser(first:String, last:String, user:String, em:String, pswd:String){
+func postUser(first:String, last:String, user:String, em:String, pswd:String, phoneNum:String){
     let params:Parameters=[
         "firstName":first,
         "lastName":last,
         "username":user,
         "email":em,
-        "password":pswd
+        "password":pswd,
+        "phoneNumber":phoneNum
     ]
 
     AF.request("http://0.0.0.0:8000/users/register", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200 ..< 299).responseJSON { AFdata in

@@ -9,12 +9,12 @@ import SwiftUI
 
 struct DiscoverPage: View { // This is all just randomly generated videos from random people till we get an algo.
     var body: some View {
-        NavigationView{
+        
         VStack {
         
             HStack {
                 // change this to a NavigationLink to search bar
-                NavigationLink(destination:SettingsUsername()){SearchButton()}
+                NavigationLink(destination:SettingsUsername().navigationBarBackButtonHidden(true)){SearchButton()}
                     .padding(.leading, -50)
                 Text("Ortis".uppercased())
                     .fontWeight(.semibold)
@@ -53,11 +53,11 @@ struct DiscoverPage: View { // This is all just randomly generated videos from r
                             //.padding(.top, 50)
                                        
                 HStack { // videos with the highest views
-                    NavigationLink(destination:SelectedVideo()){PopularThumbnail()}
+                    NavigationLink(destination:SelectedVideo().navigationBarBackButtonHidden(true)){PopularThumbnail()}
                         .padding(.bottom, 30)
-                    NavigationLink(destination:SelectedVideo()){PopularThumbnail()}
+                    NavigationLink(destination:SelectedVideo().navigationBarBackButtonHidden(true)){PopularThumbnail()}
                         .padding(.bottom, 30)
-                    NavigationLink(destination:SelectedVideo()){PopularThumbnail()}
+                    NavigationLink(destination:SelectedVideo().navigationBarBackButtonHidden(true)){PopularThumbnail()}
                         .padding(.bottom, 30)
                                        }
                     
@@ -69,8 +69,8 @@ struct DiscoverPage: View { // This is all just randomly generated videos from r
                             .underline()
     
                     VStack { // trending popular videos
-                        NavigationLink(destination:SelectedVideo()){ThumbnailButton()}
-                        NavigationLink(destination:SelectedVideo()){ThumbnailButton()}
+                        NavigationLink(destination:SelectedVideo().navigationBarBackButtonHidden(true)){ThumbnailButton()}
+                        NavigationLink(destination:SelectedVideo().navigationBarBackButtonHidden(true)){ThumbnailButton()}
                        
                     }
                     
@@ -84,10 +84,10 @@ struct DiscoverPage: View { // This is all just randomly generated videos from r
                     
                     HStack{
                         
-                        NavigationLink(destination:EditingPageView()){EditingPageButton().padding([.top, .trailing], 20.0)}
-                        NavigationLink(destination:DiscoverPage()){DiscoverButton().padding([.top, .trailing], 20.0)}
-                        NavigationLink(destination:MainMenuView()){HomeButton().padding([.top, .leading, .trailing], 20.0)}
-                        NavigationLink(destination:ProfileView()){ProfileButton().padding([.top, .leading,], 20.0)}
+                        NavigationLink(destination:EditingPageView().navigationBarBackButtonHidden(true)){EditingPageButton().padding([.top, .trailing], 20.0)}
+                        NavigationLink(destination:DiscoverPage().navigationBarBackButtonHidden(true)){DiscoverButton().padding([.top, .trailing], 20.0)}
+                        NavigationLink(destination:MainMenuView().navigationBarBackButtonHidden(true)){HomeButton().padding([.top, .leading, .trailing], 20.0)}
+                        NavigationLink(destination:ProfileView().navigationBarBackButtonHidden(true)){ProfileButton().padding([.top, .leading,], 20.0)}
                         
                         
                         
@@ -101,7 +101,7 @@ struct DiscoverPage: View { // This is all just randomly generated videos from r
         
     }
         
-}
+
 
     
 

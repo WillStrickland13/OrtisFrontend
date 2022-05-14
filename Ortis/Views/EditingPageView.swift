@@ -10,7 +10,7 @@ import SwiftUI
 struct EditingPageView: View {
     var body: some View {
         
-        NavigationView{
+       
             VStack{
                 
                 HStack {
@@ -118,7 +118,7 @@ struct EditingPageView: View {
         }
         
     }
-}
+
 
 struct EditingPageView_Previews: PreviewProvider {
     static var previews: some View {

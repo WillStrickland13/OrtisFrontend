@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegisterPage: View {
     var body: some View {
-        NavigationView{
+        
             VStack{
                 Text("Ortis".uppercased())
                     .fontWeight(.semibold)
@@ -35,7 +35,7 @@ struct RegisterPage: View {
                     
                 }
             
-        }
+        
         
     }
 }

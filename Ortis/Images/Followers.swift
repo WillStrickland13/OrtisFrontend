@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct Followers: View {
+    @State var followers=0;
     var body: some View {
         VStack {
-            Text("1,134") // counter for follower count
+            Text(String(followers)) // counter for follower count
                 .foregroundColor(.white)
                 .font(.title3)
           
@@ -18,6 +19,11 @@ struct Followers: View {
                 .underline()
                 .font(.body)
                 .foregroundColor(.white)
+        }.onAppear(){
+            print("getting followers")
+            userServices.getFollowers(){result in
+            followers=result
+            }
         }
         }
     }

@@ -11,7 +11,7 @@ struct VideoDetails: View {
     @State var description: String = ""
     @State var title: String = ""
     var body: some View {
-        NavigationView{
+   
         
         VStack {
             
@@ -95,7 +95,7 @@ struct VideoDetails: View {
     
        
         }
-    }
+    
 }
 
 struct titleAndDescriptionPage_Previews: PreviewProvider {

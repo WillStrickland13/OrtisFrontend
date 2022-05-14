@@ -10,7 +10,10 @@ import Alamofire
 import SwiftyJSON
 var loginVar:Bool=false
 public var currentUser: String=""
+let us=UserServices()
+
 struct LoginView: View {
+    @State var userInfo=[UserInfo]();
     @State private var isLoginCorrect = false
     @State var username: String=""
     @State var password: String=""
@@ -59,6 +62,7 @@ struct LoginView: View {
                         ]
                         
                         AF.request("http://0.0.0.0:8000/users/login", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200 ..< 299).responseJSON { AFdata in
+                            print(AFdata)
                             do {
                                 guard let jsonObject = try JSONSerialization.jsonObject(with: AFdata.data!) as? [String: Any] else {
                                     print("Error: Cannot convert data to JSON object")
@@ -79,6 +83,20 @@ struct LoginView: View {
                                     if authentication=="Authentication Successful"{
                                         isLoginCorrect.toggle()
                                         currentUser=username
+                                        us.loadUserData(){
+                                        
+                                            (userInfo) in
+                                                
+                                                self.userInfo = userInfo
+                                            firstName=self.userInfo.first!.firstName
+                                            lastName = self.userInfo.first!.lastName
+                                            email=self.userInfo.first!.email
+                                            isPrivate=self.userInfo.first!.isPrivate
+                                            phoneNumber=self.userInfo.first!.phoneNumber
+                                            bio = self.userInfo.first!.bio
+                                            userId=self.userInfo.first!.id
+                                            print(self.userInfo.first!.firstName)
+                                        }
                                     }
                                     else{
                                         isLoginCorrect=false
@@ -94,7 +112,7 @@ struct LoginView: View {
                 
                 
             }
-            NavigationLink("",destination: MainMenuView(), isActive: $isLoginCorrect)
+            NavigationLink("",destination: MainMenuView().navigationBarBackButtonHidden(true), isActive: $isLoginCorrect)
         }
         
         
