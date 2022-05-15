@@ -13,7 +13,6 @@
 		608ED69D277936CE00E94BD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED69C277936CE00E94BD7 /* ContentView.swift */; };
 		608ED69F277936CE00E94BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608ED69E277936CE00E94BD7 /* Assets.xcassets */; };
 		608ED6A2277936CE00E94BD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608ED6A1277936CE00E94BD7 /* Preview Assets.xcassets */; };
-		608ED6A92779373F00E94BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6A82779373F00E94BD7 /* ViewController.swift */; };
 		608ED6AB277D469600E94BD7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6AA277D469600E94BD7 /* User.swift */; };
 		608ED6C2277D5D3A00E94BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608ED6C1277D5D3A00E94BD7 /* LaunchScreen.storyboard */; };
 		608ED6CA277E479C00E94BD7 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6C9277E479C00E94BD7 /* MainMenuView.swift */; };
@@ -85,7 +84,6 @@
 		608ED69C277936CE00E94BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		608ED69E277936CE00E94BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		608ED6A1277936CE00E94BD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		608ED6A82779373F00E94BD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		608ED6AA277D469600E94BD7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		608ED6C1277D5D3A00E94BD7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		608ED6C9277E479C00E94BD7 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
@@ -221,7 +219,6 @@
 			children = (
 				608ED69C277936CE00E94BD7 /* ContentView.swift */,
 				B1A577E627F6326300FE1FE4 /* EditingPageView.swift */,
-				608ED6A82779373F00E94BD7 /* ViewController.swift */,
 				608ED6C1277D5D3A00E94BD7 /* LaunchScreen.storyboard */,
 				608ED6C9277E479C00E94BD7 /* MainMenuView.swift */,
 				608ED6D4277E562F00E94BD7 /* HomePageView.swift */,
@@ -442,7 +439,6 @@
 				608ED6D5277E562F00E94BD7 /* HomePageView.swift in Sources */,
 				B139796727F27097004F161E /* SearchButton.swift in Sources */,
 				B1A578232811F0DE00FE1FE4 /* FollowersPage.swift in Sources */,
-				608ED6A92779373F00E94BD7 /* ViewController.swift in Sources */,
 				B1A57831281245F400FE1FE4 /* DiscoverButton.swift in Sources */,
 				B1A57843281A1AAD00FE1FE4 /* NextButton.swift in Sources */,
 				608ED6DB277F8A8300E94BD7 /* SignUpView.swift in Sources */,

@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @State var users = [User]()
     
-    //let vc=ViewController()
+    
     var body: some View {
         
         NavigationView{

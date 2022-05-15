@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-let vc = ViewController()
+
 struct HomePageView: View {
     @State var users = [User]()
     var body: some View {
