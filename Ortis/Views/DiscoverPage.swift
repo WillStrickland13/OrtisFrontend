@@ -11,22 +11,6 @@ struct DiscoverPage: View { // This is all just randomly generated videos from r
     var body: some View {
         
         VStack {
-        
-            HStack {
-                // change this to a NavigationLink to search bar
-                NavigationLink(destination:SettingsUsername().navigationBarBackButtonHidden(true)){SearchButton()}
-                    .padding(.leading, -50)
-                Text("Ortis".uppercased())
-                    .fontWeight(.semibold)
-                    .font(.largeTitle)
-                    .kerning(14.0)
-                    .foregroundColor(Color("SecondaryColor"))
-                    .padding([.leading,.trailing], 50)
-                Image("Logo").resizable()
-                    .frame(width: 30, height: 30)
-                    .padding(.trailing, -50)
-            }
-                .padding(.top, -90)
             
             BottomBar()
                 .padding(.top, -70)
@@ -81,17 +65,28 @@ struct DiscoverPage: View { // This is all just randomly generated videos from r
                             .padding(.bottom, -30.0)
                     }
                     .frame(minHeight:0,maxHeight: .infinity,alignment: .bottom)
-                    
-                    HStack{
-                        
-                        NavigationLink(destination:EditingPageView().navigationBarBackButtonHidden(true)){EditingPageButton().padding([.top, .trailing], 20.0)}
-                        NavigationLink(destination:DiscoverPage().navigationBarBackButtonHidden(true)){DiscoverButton().padding([.top, .trailing], 20.0)}
-                        NavigationLink(destination:MainMenuView().navigationBarBackButtonHidden(true)){HomeButton().padding([.top, .leading, .trailing], 20.0)}
-                        NavigationLink(destination:ProfileView().navigationBarBackButtonHidden(true)){ProfileButton().padding([.top, .leading,], 20.0)}
-                        
-                        
-                        
-                        
+                    .toolbar{
+                        ToolbarItem(placement: .primaryAction){
+                            Image("Logo").resizable()
+                                .frame(width: 30, height: 30)
+                        }
+                        ToolbarItem(placement: .principal){
+                            Text("Ortis".uppercased())
+                                .fontWeight(.semibold)
+                                .font(.largeTitle)
+                                .kerning(14.0)
+                                .foregroundColor(Color("SecondaryColor"))
+                                                
+                        }
+                        ToolbarItem(placement: .cancellationAction){
+                            NavigationLink(destination:SettingsUsername().navigationBarBackButtonHidden(true)){SearchButton()}
+                        }
+                        ToolbarItemGroup(placement:.bottomBar){
+                            NavigationLink(destination:EditingPageView().navigationBarBackButtonHidden(true)){EditingPageButton().padding([.top, .trailing], 20.0)}
+                            NavigationLink(destination:DiscoverPage().navigationBarBackButtonHidden(true)){DiscoverButton().padding([.top, .trailing], 20.0)}
+                            NavigationLink(destination:MainMenuView().navigationBarBackButtonHidden(true)){HomeButton().padding([.top, .leading, .trailing], 20.0)}
+                            NavigationLink(destination:ProfileView().navigationBarBackButtonHidden(true)){ProfileButton().padding([.top, .leading,], 20.0)}
+                        }
                     }
                    
                 }

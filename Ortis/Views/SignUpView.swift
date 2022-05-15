@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Alamofire
+
 struct SignUpView: View {
     @State var firstName: String = ""
     @State var lastName: String = ""

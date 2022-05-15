@@ -8,6 +8,7 @@ import Foundation
 import UIKit
 import Alamofire
 import SwiftUI
+import PixelSDK
 class ViewController:UIViewController{
     
 
@@ -76,6 +77,7 @@ class ViewController:UIViewController{
  
     
 }
+
 
 public var url = "http://0.0.0.0:8000"
 public var firstName=""

@@ -438,7 +438,7 @@
 		3A7850B979810FD646284A92C7F2AE2D /* AWSCognitoIdentityProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSCognitoIdentityProvider.debug.xcconfig; sourceTree = "<group>"; };
 		3A7A8F0D48AB5457AE2E9FD621CBD98B /* AWSDDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSDDTTYLogger.h; path = AWSCore/Logging/AWSDDTTYLogger.h; sourceTree = "<group>"; };
 		3A977CDADE4BB13F2E8382DFB8EFE835 /* NSError+AWSMTLModelException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+AWSMTLModelException.m"; path = "AWSCore/Mantle/NSError+AWSMTLModelException.m"; sourceTree = "<group>"; };
-		3ACAAA013DAB2F3FE06CEC2432E3B0DF /* Pods-Ortis */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Ortis"; path = Pods_Ortis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACAAA013DAB2F3FE06CEC2432E3B0DF /* Pods_Ortis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ortis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD3BB97FC032B3276029A617B8C66AB /* AWSDDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDTTYLogger.m; path = AWSCore/Logging/AWSDDTTYLogger.m; sourceTree = "<group>"; };
 		3AEF7BFECBA9C75B2799E08949067159 /* AWSCocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCocoaLumberjack.h; path = AWSCore/Logging/AWSCocoaLumberjack.h; sourceTree = "<group>"; };
 		3B69993361C16265D1D9AC7BCCF687D6 /* AWSMTLValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLValueTransformer.h; path = AWSCore/Mantle/AWSMTLValueTransformer.h; sourceTree = "<group>"; };
@@ -1038,7 +1038,7 @@
 				592313CB94B49286EEF277EA91D3D95A /* AWSCognitoIdentityProviderASF.framework */,
 				CCFB8F03867DB892EFC47B53186590C4 /* AWSCore.framework */,
 				1D216CE4A8B6F50D603960D17EE072C6 /* AWSS3.framework */,
-				3ACAAA013DAB2F3FE06CEC2432E3B0DF /* Pods-Ortis */,
+				3ACAAA013DAB2F3FE06CEC2432E3B0DF /* Pods_Ortis.framework */,
 				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
 			);
 			name = Products;
@@ -1534,7 +1534,7 @@
 			);
 			name = "Pods-Ortis";
 			productName = Pods_Ortis;
-			productReference = 3ACAAA013DAB2F3FE06CEC2432E3B0DF /* Pods-Ortis */;
+			productReference = 3ACAAA013DAB2F3FE06CEC2432E3B0DF /* Pods_Ortis.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {

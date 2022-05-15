@@ -17,11 +17,11 @@ struct SelectedVideo: View {
         
                 HStack {
                     
-                    NavigationLink(destination:SettingsPageView()){BackButton()}
+                    NavigationLink(destination:SettingsPageView().navigationBarBackButtonHidden(true)){BackButton()}
                          //Needs to be changed to go back to previous page
                     
                     
-                    NavigationLink(destination:ProfileView()){ProfilePicButton()} //profile picture of the users video
+                    NavigationLink(destination:ProfileView().navigationBarBackButtonHidden(true)){ProfilePicButton()} //profile picture of the users video
                         .frame(width: 40, height: 40)
                         .padding(.leading,40)
                     
@@ -33,7 +33,7 @@ struct SelectedVideo: View {
                         
                     // change to the username of the profile page
                     // change to the username of the profile page
-                    NavigationLink(destination:ProfileView()){ Text("UserName".uppercased())
+                    NavigationLink(destination:ProfileView().navigationBarBackButtonHidden(true)){ Text("UserName".uppercased())
                                 .fontWeight(.semibold)
                                 .font(.body)
                                 .kerning(5.0)
@@ -41,7 +41,7 @@ struct SelectedVideo: View {
                                 .underline()
                         .padding(.all, 10) }
                    
-                    NavigationLink(destination:SettingsPageView()){OptionButton()} //Needs to be changed to go to option window (which is just a share option so I think a pop up will be good)
+                    NavigationLink(destination:SettingsPageView().navigationBarBackButtonHidden(true)){OptionButton()} //Needs to be changed to go to option window (which is just a share option so I think a pop up will be good)
                         
                         
                 }
@@ -167,17 +167,14 @@ struct SelectedVideo: View {
                     .frame(minHeight:0,maxHeight: .infinity,alignment: .bottom)
                     
                     
-                    HStack{
-                        
-                        NavigationLink(destination:EditingPageView()){EditingPageButton().padding([.top, .trailing], 20.0)}
-                        NavigationLink(destination:DiscoverPage()){DiscoverButton().padding([.top, .trailing], 20.0)}
-                        NavigationLink(destination:MainMenuView()){HomeButton().padding([.top, .leading, .trailing], 20.0)}
-                        NavigationLink(destination:ProfileView()){ProfileButton().padding([.top, .leading,], 20.0)}
-                        
-                        
-                        
-                        
-                    }
+                   
+                }
+            }.toolbar{
+                ToolbarItemGroup(placement:.bottomBar){
+                    NavigationLink(destination:EditingPageView().navigationBarBackButtonHidden(true)){EditingPageButton().padding([.top, .trailing], 20.0)}
+                    NavigationLink(destination:DiscoverPage().navigationBarBackButtonHidden(true)){DiscoverButton().padding([.top, .trailing], 20.0)}
+                    NavigationLink(destination:MainMenuView().navigationBarBackButtonHidden(true)){HomeButton().padding([.top, .leading, .trailing], 20.0)}
+                    NavigationLink(destination:ProfileView().navigationBarBackButtonHidden(true)){ProfileButton().padding([.top, .leading,], 20.0)}
                 }
             }
         }

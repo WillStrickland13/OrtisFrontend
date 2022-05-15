@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6002BDFA282EC43A0068B19A /* LoginServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6002BDF9282EC43A0068B19A /* LoginServices.swift */; };
 		6002BDFC282EC4EF0068B19A /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6002BDFB282EC4EF0068B19A /* UserServices.swift */; };
+		6002BDFE2830B8090068B19A /* CaptureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6002BDFD2830B8090068B19A /* CaptureImageView.swift */; };
+		6002BE002830B8980068B19A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6002BDFF2830B8980068B19A /* Coordinator.swift */; };
 		608ED69B277936CE00E94BD7 /* OrtisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED69A277936CE00E94BD7 /* OrtisApp.swift */; };
 		608ED69D277936CE00E94BD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED69C277936CE00E94BD7 /* ContentView.swift */; };
 		608ED69F277936CE00E94BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608ED69E277936CE00E94BD7 /* Assets.xcassets */; };
@@ -80,6 +82,8 @@
 		4C522FE4F325531D7518C7B1 /* Pods-Ortis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortis.release.xcconfig"; path = "Target Support Files/Pods-Ortis/Pods-Ortis.release.xcconfig"; sourceTree = "<group>"; };
 		6002BDF9282EC43A0068B19A /* LoginServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServices.swift; sourceTree = "<group>"; };
 		6002BDFB282EC4EF0068B19A /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
+		6002BDFD2830B8090068B19A /* CaptureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImageView.swift; sourceTree = "<group>"; };
+		6002BDFF2830B8980068B19A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		608ED697277936CE00E94BD7 /* Ortis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ortis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608ED69A277936CE00E94BD7 /* OrtisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrtisApp.swift; sourceTree = "<group>"; };
 		608ED69C277936CE00E94BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 				B1A5781A280CD62B00FE1FE4 /* VideoDetails.swift */,
 				B1A578282811F4E100FE1FE4 /* FollowingPage.swift */,
 				B1A578322812468C00FE1FE4 /* DiscoverPage.swift */,
+				6002BDFD2830B8090068B19A /* CaptureImageView.swift */,
+				6002BDFF2830B8980068B19A /* Coordinator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -448,6 +454,7 @@
 				608ED6DB277F8A8300E94BD7 /* SignUpView.swift in Sources */,
 				608ED6CF277E4CA400E94BD7 /* addButton.swift in Sources */,
 				B1A577F927FE90BB00FE1FE4 /* TextButton.swift in Sources */,
+				6002BDFE2830B8090068B19A /* CaptureImageView.swift in Sources */,
 				608ED6DF277F970A00E94BD7 /* LoginButton.swift in Sources */,
 				B1A5783B281742E600FE1FE4 /* ExpandButton.swift in Sources */,
 				B1A5783D2817967D00FE1FE4 /* ProfileThumbnail.swift in Sources */,
@@ -460,6 +467,7 @@
 				B1A577F327FCEB1700FE1FE4 /* SelectedVideo.swift in Sources */,
 				608ED6D7277EBD2B00E94BD7 /* ProfileView.swift in Sources */,
 				B1A5783528124CC600FE1FE4 /* PopularThumbnail.swift in Sources */,
+				6002BE002830B8980068B19A /* Coordinator.swift in Sources */,
 				B1A5780328065E3F00FE1FE4 /* SelectPhotoButton.swift in Sources */,
 				B1A57819280CB24C00FE1FE4 /* EditingPageButton.swift in Sources */,
 				608ED69B277936CE00E94BD7 /* OrtisApp.swift in Sources */,
@@ -611,6 +619,9 @@
 				DEVELOPMENT_TEAM = 8R8Y56S66J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is needed so you can take photos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access is needed so you can record video with sound.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo access is needed so you can select photos from your library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -643,6 +654,9 @@
 				DEVELOPMENT_TEAM = 8R8Y56S66J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is needed so you can take photos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access is needed so you can record video with sound.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo access is needed so you can select photos from your library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
