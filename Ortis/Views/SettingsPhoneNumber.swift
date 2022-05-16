@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 struct SettingsPhoneNumber: View {
     @State var phonenumber: String = ""
     var body: some View {

@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 struct FollowingPage: View {
     var body: some View {
         VStack(alignment: .leading){

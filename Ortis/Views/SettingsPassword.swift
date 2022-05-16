@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 struct SettingsPassword: View {
     @State var password: String = ""
     var body: some View {

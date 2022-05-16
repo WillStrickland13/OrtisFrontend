@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 @main
 struct OrtisApp: App {
     var body: some Scene {

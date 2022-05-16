@@ -64,6 +64,54 @@ class UserServices{
             }
         }
     }
+    var str = ""
+    public func displayName()->String{
+        
+        getData(from: url){result in
+            self.str=result
+            
+        }
+        print(str)
+        return str
+    }
+    private func getData(from url: String, completion: @escaping(String)->Void){
+        
+        let task = URLSession.shared.dataTask(with: URL(string:url+"/users")!, completionHandler: {data, response, error in
+
+            guard let data =  data else{ return }
+
+            do{
+                let result = try JSONDecoder().decode([UserInfo].self, from: data)
+
+                completion(result.first!.firstName)
+            }
+            catch let jsonErr {
+                print("Error serializing json:", jsonErr)
+                completion("Error")
+            }
+        })
+        task.resume()
+        
+
+
+    }
+    
+    private func getName(url: String, completion: @escaping (String) -> ()) {
+        let url = URL(string: url)!
+
+        URLSession.shared.dataTask(with:url) { (data, response, error) in
+          if error != nil {
+            print(error!)
+            completion("")
+          } else {
+            if let returnData = String(data: data!, encoding: .utf8) {
+              completion(returnData)
+            } else {
+              completion("")
+            }
+          }
+        }.resume()
+    }
 }
 
 

@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 struct SettingsPageView: View {
     var body: some View {
         

@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 import SwiftUI
+import Alamofire
+import SwiftyJSON
 struct CaptureImageView{
     @Binding var isShown: Bool
     @Binding var image: Image?

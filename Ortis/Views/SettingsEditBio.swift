@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 struct SettingsEditBio: View {
     @State var bio: String = ""
     var body: some View {

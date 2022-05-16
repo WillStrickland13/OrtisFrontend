@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import Alamofire
+import SwiftyJSON
 import PixelSDK
 import UIKit
 struct EditingPageView: View {
-    @State var ecd:EditControllerDelegate?=nil
+    let vc = ViewController()
     @State var image:Image?=nil
-    @State var showCaptureImageView: Bool = false
+    @State private var showCaptureImageView = false
     var body: some View {
         
         
@@ -42,7 +44,7 @@ struct EditingPageView: View {
                     
                     HStack{
                         AddButton().onTapGesture {
-                            
+                            showCaptureImageView=true
                         } // this opens the camera roll for videos from last 48 hours
                         
                         
@@ -64,9 +66,12 @@ struct EditingPageView: View {
                 }
             }
             .padding(.bottom,-200)
-            if (showCaptureImageView) {
-                    CaptureImageView(isShown: $showCaptureImageView, image: $image)
+            .sheet(isPresented:$showCaptureImageView){
+                ImagePicker()
             }
+//            if (showCaptureImageView) {
+//                    CaptureImageView(isShown: $showCaptureImageView, image: $image)
+//            }
             
             
             
@@ -102,7 +107,12 @@ struct EditingPageView: View {
     }
     
 }
-
+struct ModalView: View {
+    @Binding var presentedAsModal: Bool
+    var body: some View {
+        Button("dismiss") { self.presentedAsModal = false }
+    }
+}
 
 struct EditingPageView_Previews: PreviewProvider {
     static var previews: some View {

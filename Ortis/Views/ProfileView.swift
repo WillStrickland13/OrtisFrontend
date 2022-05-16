@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Alamofire
+import SwiftyJSON
 let userServices=UserServices()
 
 struct ProfileView: View {
@@ -23,7 +25,7 @@ struct ProfileView: View {
                     Circle() // this is profile picture
                         .frame(width: 80, height: 80)
                     //have this add follower and following to database
-                    NavigationLink(destination:HomePageView()){FollowButton().padding(.leading, 140)}
+                    NavigationLink(destination:MainMenuView()){FollowButton().padding(.leading, 140)}
                     
                 }
                 Text("\(firstName) \(lastName)")

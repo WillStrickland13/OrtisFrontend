@@ -7,7 +7,8 @@
 
 import Foundation
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
   @Binding var isCoordinatorShown: Bool
   @Binding var imageInCoordinator: Image?

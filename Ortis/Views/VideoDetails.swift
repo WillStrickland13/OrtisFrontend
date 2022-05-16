@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 struct VideoDetails: View {
     @State var description: String = ""
     @State var title: String = ""

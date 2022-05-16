@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 struct SettingsPrivacy: View {
     @State private var privacy = true
     var body: some View {

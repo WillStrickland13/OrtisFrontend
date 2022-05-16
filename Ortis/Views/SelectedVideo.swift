@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 struct SelectedVideo: View {
     @State var comment: String = ""
     var body: some View {

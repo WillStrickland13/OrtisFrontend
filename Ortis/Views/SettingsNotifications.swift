@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 struct SettingsNotifications: View {
     @State private var notifications = true
     var body: some View {

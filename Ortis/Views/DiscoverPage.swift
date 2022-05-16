@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import Alamofire
+import SwiftyJSON
 struct DiscoverPage: View { // This is all just randomly generated videos from random people till we get an algo.
     var body: some View {
         

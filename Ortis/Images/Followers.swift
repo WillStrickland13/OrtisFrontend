@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Alamofire
+import SwiftyJSON
 
 struct Followers: View {
     @State var followers=0;
