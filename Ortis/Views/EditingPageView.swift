@@ -67,12 +67,9 @@ struct EditingPageView: View {
             }
             .padding(.bottom,-200)
             .sheet(isPresented:$showCaptureImageView){
-                ImagePicker()
+                ViewController.ImagePicker()
+                
             }
-//            if (showCaptureImageView) {
-//                    CaptureImageView(isShown: $showCaptureImageView, image: $image)
-//            }
-            
             
             
             
