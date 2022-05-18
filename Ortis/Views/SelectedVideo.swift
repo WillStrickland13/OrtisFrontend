@@ -15,40 +15,6 @@ struct SelectedVideo: View {
         
         VStack {
             
-        
-                HStack {
-                    
-                    NavigationLink(destination:SettingsPageView().navigationBarBackButtonHidden(true)){BackButton()}
-                         //Needs to be changed to go back to previous page
-                    
-                    
-                    NavigationLink(destination:ProfileView().navigationBarBackButtonHidden(true)){ProfilePicButton()} //profile picture of the users video
-                        .frame(width: 40, height: 40)
-                        .padding(.leading,40)
-                    
-                    
-                    
-                    
-                    
-                    
-                        
-                    // change to the username of the profile page
-                    // change to the username of the profile page
-                    NavigationLink(destination:ProfileView().navigationBarBackButtonHidden(true)){ Text("UserName".uppercased())
-                                .fontWeight(.semibold)
-                                .font(.body)
-                                .kerning(5.0)
-                                .foregroundColor(Color(.white))
-                                .underline()
-                        .padding(.all, 10) }
-                   
-                    NavigationLink(destination:SettingsPageView().navigationBarBackButtonHidden(true)){OptionButton()} //Needs to be changed to go to option window (which is just a share option so I think a pop up will be good)
-                        
-                        
-                }
-                .padding(.top, -80)
-               
-            
             
             
             
@@ -171,12 +137,30 @@ struct SelectedVideo: View {
                    
                 }
             }.toolbar{
+                ToolbarItem(placement: .primaryAction){
+                    Image("Logo").resizable()
+                        .frame(width: 30, height: 30)
+                }
+                ToolbarItem(placement: .principal){
+                    Text(currentUser.uppercased())
+                        .fontWeight(.semibold)
+                        .font(.largeTitle)
+                        .kerning(14.0)
+                        .foregroundColor(Color("SecondaryColor"))
+                                        
+                }
+                ToolbarItem(placement: .cancellationAction){
+                    NavigationLink(destination:MainMenuView().navigationBarBackButtonHidden(true))
+                        {BackButton()}
+    //                    .padding(.leading,-60)
+                }
                 ToolbarItemGroup(placement:.bottomBar){
                     NavigationLink(destination:EditingPageView().navigationBarBackButtonHidden(true)){EditingPageButton().padding([.top, .trailing], 20.0)}
                     NavigationLink(destination:DiscoverPage().navigationBarBackButtonHidden(true)){DiscoverButton().padding([.top, .trailing], 20.0)}
                     NavigationLink(destination:MainMenuView().navigationBarBackButtonHidden(true)){HomeButton().padding([.top, .leading, .trailing], 20.0)}
                     NavigationLink(destination:ProfileView().navigationBarBackButtonHidden(true)){ProfileButton().padding([.top, .leading,], 20.0)}
                 }
+            
             }
         }
         
