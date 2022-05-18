@@ -27,6 +27,7 @@
 		608ED6DD277F967200E94BD7 /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6DC277F967200E94BD7 /* SignUpButton.swift */; };
 		608ED6DF277F970A00E94BD7 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6DE277F970A00E94BD7 /* LoginButton.swift */; };
 		608ED6E1277F9F0A00E94BD7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6E0277F9F0A00E94BD7 /* LoginView.swift */; };
+		60EA63D828343188000C738E /* ShowVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA63D728343188000C738E /* ShowVideoView.swift */; };
 		B139796727F27097004F161E /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139796627F27097004F161E /* SearchButton.swift */; };
 		B139796927F2868A004F161E /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139796827F2868A004F161E /* FollowButton.swift */; };
 		B1A577E527F5338400FE1FE4 /* SettingsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577E427F5338400FE1FE4 /* SettingsPageView.swift */; };
@@ -98,6 +99,7 @@
 		608ED6DC277F967200E94BD7 /* SignUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
 		608ED6DE277F970A00E94BD7 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		608ED6E0277F9F0A00E94BD7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		60EA63D728343188000C738E /* ShowVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowVideoView.swift; sourceTree = "<group>"; };
 		6F01A43940B01719C1387767 /* Pods-Ortis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortis.debug.xcconfig"; path = "Target Support Files/Pods-Ortis/Pods-Ortis.debug.xcconfig"; sourceTree = "<group>"; };
 		B139796627F27097004F161E /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		B139796827F2868A004F161E /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				B1A578282811F4E100FE1FE4 /* FollowingPage.swift */,
 				B1A578322812468C00FE1FE4 /* DiscoverPage.swift */,
 				6002BE0B283188740068B19A /* ViewController.swift */,
+				60EA63D728343188000C738E /* ShowVideoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				608ED6DB277F8A8300E94BD7 /* SignUpView.swift in Sources */,
 				608ED6CF277E4CA400E94BD7 /* addButton.swift in Sources */,
 				B1A577F927FE90BB00FE1FE4 /* TextButton.swift in Sources */,
+				60EA63D828343188000C738E /* ShowVideoView.swift in Sources */,
 				608ED6DF277F970A00E94BD7 /* LoginButton.swift in Sources */,
 				B1A5783B281742E600FE1FE4 /* ExpandButton.swift in Sources */,
 				B1A5783D2817967D00FE1FE4 /* ProfileThumbnail.swift in Sources */,

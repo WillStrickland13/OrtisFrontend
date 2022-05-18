@@ -40,21 +40,10 @@ struct VideoDetails: View {
                         .underline()
             
             HStack { // frames of the video to select thumbnail, sliding around
-            Rectangle()
+                Image(uiImage: imageToPost!)
+                    .resizable()
                     .frame(width: 200, height: 100)
-                    .overlay(Text("Frame for thumbnail")
-                        .foregroundColor(.black))
-                
-               Rectangle()
-                    .frame(width: 200, height: 100)
-                    .overlay(Text("Frame for thumbnail")
-                        .foregroundColor(.black))
-                   
-                Rectangle()
-                    .frame(width: 200, height: 100)
-                    .overlay(Text("Frame for thumbnail")
-                        .foregroundColor(.black))
-                   
+                    
            
             }
             .padding(.bottom,50)

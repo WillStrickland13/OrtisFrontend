@@ -11,17 +11,25 @@ import SwiftyJSON
 import PixelSDK
 import UIKit
 struct EditingPageView: View {
-    let vc = ViewController()
-    @State var image:Image?=nil
+    //let vc = ViewController()
     @State private var showCaptureImageView = false
     var body: some View {
         
         
         VStack{
             
-            image?.resizable()
-                    .frame(width: 250, height: 250)
-                    .shadow(radius: 10)
+            
+//            if(self.vc.isDoneEditing){
+//                Image(uiImage: self.vc.img!)
+//                    .onAppear(){
+//                        print("adding img")
+//                    }
+//            }
+           
+                
+            
+            
+            
             
             VStack {
                 HStack{
@@ -45,6 +53,7 @@ struct EditingPageView: View {
                     HStack{
                         AddButton().onTapGesture {
                             showCaptureImageView=true
+                            //image=vc.getImageToPost()
                         } // this opens the camera roll for videos from last 48 hours
                         
                         
@@ -104,6 +113,10 @@ struct EditingPageView: View {
     }
     
 }
+
+
+
+
 struct ModalView: View {
     @Binding var presentedAsModal: Bool
     var body: some View {
@@ -111,8 +124,8 @@ struct ModalView: View {
     }
 }
 
-struct EditingPageView_Previews: PreviewProvider {
-    static var previews: some View {
-        EditingPageView().preferredColorScheme(.dark)
-    }
-}
+//struct EditingPageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EditingPageView().preferredColorScheme(.dark)
+//    }
+//}
