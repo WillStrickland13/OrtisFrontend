@@ -14,7 +14,6 @@ struct OrtisApp: App {
         
         WindowGroup {
             
-            
             ContentView().preferredColorScheme(.dark)
             
         }

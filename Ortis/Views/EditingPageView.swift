@@ -11,9 +11,9 @@ import SwiftyJSON
 import PixelSDK
 import UIKit
 struct EditingPageView: View {
-    //let vc = ViewController()
+    @State var description: String = ""
+    @State var title: String = ""
     @State private var showCaptureImageView = false
-    //@State private var isDoneEditing:Bool
     @ObservedObject var vc = ViewController()
     var body: some View {
         
@@ -36,46 +36,46 @@ struct EditingPageView: View {
             
             
             VStack {
-                HStack{
-                    MusicButton().padding()
-                    TextButton().padding()
-                    FilterButton().padding()
-                    CutButton().padding()
-                    TrashButton().padding()
+//                HStack{
+//                    MusicButton().padding()
+//                    TextButton().padding()
+//                    FilterButton().padding()
+//                    CutButton().padding()
+//                    TrashButton().padding()
+//                }
+                
+                
+                AddButton().onTapGesture {
+                    showCaptureImageView=true
                 }
                 
+                TextField("Title...", text: $title)
+                    .padding()
+                    .background(Color(.gray))
+                    .foregroundColor(Color(.white))
+                    .cornerRadius(5.0)
+                
+                TextField("Description...", text: $description)
+                    .frame(width: 360, height: 150)
+                    .padding()
+                    .background(Color(.gray))
+                    .foregroundColor(Color(.white))
+                    .cornerRadius(5.0)
+                    .padding(.bottom,25)
                 
                 
-                VStack(alignment: .trailing ){
-                    Rectangle() // first rectangle is a timeline for music
-                        .strokeBorder(Color.white ,lineWidth: 3.0)
-                        .frame(width: 320, height: 60)
-                        .overlay(Text("Music timline")
-                                    .foregroundColor(.gray))
-                    
-                    
-                    HStack{
-                        AddButton().onTapGesture {
-                            showCaptureImageView=true
-                        } // this opens the camera roll for videos from last 48 hours
-                        
-                        
-                        Rectangle() // middle rectangle is for actual vides, adding then with the add button
-                            .strokeBorder(Color.white ,lineWidth: 3.0)
-                            .frame(width: 320, height: 60)
-                            .overlay(Text("video timline")
-                                        .foregroundColor(.gray))
-                    }
-                    
-                    
-                    
-                    Rectangle() //last rectangle is effects like text and filters
-                        .strokeBorder(Color.white ,lineWidth: 3.0)
-                        .frame(width: 320, height: 60)
-                        .overlay(Text("filter and text timline")
-                                    .foregroundColor(.gray))
-                    
+                Button(action: { //this actually post the video
+                    print("Posting button test")
+                }) {
+                    Text("Post")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(.white))
+                        .underline()
                 }
+                .padding(.bottom, 50)
+                    
+                
             }
             .padding(.bottom,-200)
             .sheet(isPresented:$showCaptureImageView){
@@ -92,7 +92,8 @@ struct EditingPageView: View {
             
         }.toolbar{
             ToolbarItem(placement: .primaryAction){
-                NavigationLink(destination:VideoDetails().navigationBarBackButtonHidden(true)){NextButton()}
+                Image("Logo").resizable()
+                    .frame(width: 30, height: 30)
             }
             ToolbarItem(placement: .principal){
                 Text(currentUser.uppercased())
@@ -100,11 +101,12 @@ struct EditingPageView: View {
                     .font(.largeTitle)
                     .kerning(14.0)
                     .foregroundColor(Color("SecondaryColor"))
-                
+                                    
             }
             ToolbarItem(placement: .cancellationAction){
-                DraftButton()
-                    .padding(.trailing, 200)
+                NavigationLink(destination:MainMenuView().navigationBarBackButtonHidden(true))
+                    {BackButton()}
+//                    .padding(.leading,-60)
             }
             ToolbarItemGroup(placement:.bottomBar){
                 NavigationLink(destination:EditingPageView().navigationBarBackButtonHidden(true)){EditingPageButton().padding([.top, .trailing], 20.0)}
@@ -127,8 +129,8 @@ struct ModalView: View {
     }
 }
 
-//struct EditingPageView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        EditingPageView().preferredColorScheme(.dark)
-//    }
-//}
+struct EditingPageView_Previews: PreviewProvider {
+    static var previews: some View {
+        EditingPageView().preferredColorScheme(.dark)
+    }
+}

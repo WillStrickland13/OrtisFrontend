@@ -88,8 +88,8 @@ struct VideoDetails: View {
     
 }
 
-struct titleAndDescriptionPage_Previews: PreviewProvider {
-    static var previews: some View {
-        VideoDetails().preferredColorScheme(.dark)
-    }
-}
+//struct titleAndDescriptionPage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        VideoDetails().preferredColorScheme(.dark)
+//    }
+//}

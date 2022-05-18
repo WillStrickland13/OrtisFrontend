@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  PixelSDKExample
-//
-//  Created by Josh Bernfeld on 8/1/19.
-//  Copyright © 2021 GottaYotta, Inc. All rights reserved.
-//
+
 
 import UIKit
 import PixelSDK
