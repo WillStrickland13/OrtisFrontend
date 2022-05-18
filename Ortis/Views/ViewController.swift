@@ -11,16 +11,17 @@ import PixelSDK
 import PhotosUI
 import SwiftUI
 public var imageToPost:UIImage?
+
+
 class ViewController: UITableViewController, ObservableObject{
     @State var isDisplayed:Bool = false
     @Published var isDoneEditing:Bool = false
     @Published var img:UIImage?
+    
     struct ImagePicker: UIViewControllerRepresentable {
+        var vc:ViewController
         typealias UIViewControllerType = UINavigationController
         
-        
-        
-        let vc = ViewController()
         
         func makeUIViewController(context: Context) -> UINavigationController {
             
@@ -39,15 +40,9 @@ class ViewController: UITableViewController, ObservableObject{
             
         }
 
-        func getViewController()->ViewController{
-            return vc
-        }
-    }
-    func checkIfDoneEditing()->Bool{
-        return isDisplayed
+        
     }
 
-    
 }
 
 // MARK: - EditControllerDelegate
@@ -56,13 +51,16 @@ extension ViewController: EditControllerDelegate {
     
     func editController(_ editController: EditController, didLoadEditing session: Session) {
         print("loaded editing")
+        isDoneEditing=false
+        img = nil
+        
     }
+
     
     func editController(_ editController: EditController, didFinishEditing session: Session){
         // Called when the Next button in the EditController is pressed.
         // Use this time to either dismiss the UINavigationController, or push a new controller on.
         print("finished editing")
-        //let controller = UIViewController()
         if let image = session.image {
             ImageExporter.shared.export(image: image, completion: { (error, uiImage) in
                 if let error = error {
@@ -71,11 +69,9 @@ extension ViewController: EditControllerDelegate {
                 }
                 
                 print("Finished image export with UIImage: \(uiImage!)")
-                self.isDisplayed.toggle()
-                self.isDoneEditing=true
-                self.isDisplayed=true
-                self.img=uiImage
                 imageToPost=uiImage
+                self.img = uiImage
+                self.isDoneEditing.toggle()
                 print("toggled")
                 
                 

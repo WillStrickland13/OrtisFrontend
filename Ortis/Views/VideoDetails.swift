@@ -42,7 +42,7 @@ struct VideoDetails: View {
             HStack { // frames of the video to select thumbnail, sliding around
                 Image(uiImage: imageToPost!)
                     .resizable()
-                    .frame(width: 200, height: 100)
+                    
                     
            
             }

@@ -13,18 +13,22 @@ import UIKit
 struct EditingPageView: View {
     //let vc = ViewController()
     @State private var showCaptureImageView = false
+    //@State private var isDoneEditing:Bool
+    @ObservedObject var vc = ViewController()
     var body: some View {
         
         
         VStack{
             
             
-//            if(self.vc.isDoneEditing){
-//                Image(uiImage: self.vc.img!)
-//                    .onAppear(){
-//                        print("adding img")
-//                    }
-//            }
+            if(self.vc.isDoneEditing){
+                Image(uiImage: self.vc.img!)
+                    .resizable()
+                    .scaledToFit()
+                    .onAppear(){
+                        print("adding img")
+                    }
+            }
            
                 
             
@@ -53,7 +57,6 @@ struct EditingPageView: View {
                     HStack{
                         AddButton().onTapGesture {
                             showCaptureImageView=true
-                            //image=vc.getImageToPost()
                         } // this opens the camera roll for videos from last 48 hours
                         
                         
@@ -76,7 +79,7 @@ struct EditingPageView: View {
             }
             .padding(.bottom,-200)
             .sheet(isPresented:$showCaptureImageView){
-                ViewController.ImagePicker()
+                ViewController.ImagePicker(vc:vc)
                 
             }
             
