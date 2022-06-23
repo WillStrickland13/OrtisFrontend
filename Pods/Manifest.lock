@@ -1,13 +1,13 @@
 PODS:
-  - Alamofire (5.5.0)
-  - AWSCognitoIdentityProvider (2.26.6):
-    - AWSCognitoIdentityProviderASF (= 2.26.6)
-    - AWSCore (= 2.26.6)
-  - AWSCognitoIdentityProviderASF (2.26.6):
-    - AWSCore (= 2.26.6)
-  - AWSCore (2.26.6)
-  - AWSS3 (2.26.6):
-    - AWSCore (= 2.26.6)
+  - Alamofire (5.6.1)
+  - AWSCognitoIdentityProvider (2.27.9):
+    - AWSCognitoIdentityProviderASF (= 2.27.9)
+    - AWSCore (= 2.27.9)
+  - AWSCognitoIdentityProviderASF (2.27.9):
+    - AWSCore (= 2.27.9)
+  - AWSCore (2.27.9)
+  - AWSS3 (2.27.9):
+    - AWSCore (= 2.27.9)
   - PixelSDK (11.2.0):
     - PixelSDK-GPUImage3 (~> 3.0)
   - PixelSDK-GPUImage3 (3.1.1)
@@ -33,11 +33,11 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
-  AWSCognitoIdentityProvider: eeb90cf37247ce868fe3bbfdfb2a6b5bd2f47c73
-  AWSCognitoIdentityProviderASF: 2be698f72bebb21c1846d10c3d8d2e21c08d97bd
-  AWSCore: c60f9d6bd085bf9186d8629ca7ee7df54db1f494
-  AWSS3: 3325e94bc9330580e4f3adb4450add2f18611899
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  AWSCognitoIdentityProvider: 7b4835e094cec4f35a988c5eabea5b8980fb7953
+  AWSCognitoIdentityProviderASF: 3adc532f5f7e3641ea954cd30adc2e7b5768488f
+  AWSCore: 3419bcaeec8d7809efa32f0e83f151ef8e93ad78
+  AWSS3: e2040a6ddf05ae4cef4abe2b9d91295deef92565
   PixelSDK: 0ef999e79cd8516ba1ceec514339a6e6d494ce87
   PixelSDK-GPUImage3: 6a66cfca487b57219e557a6a31b21d5bd6480bea
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08

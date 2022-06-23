@@ -50,6 +50,23 @@
             ReferencedContainer = "container:Ortis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "AWS_REGION"
+            value = "us-west-2"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "AWS_ACCESS_KEY_ID"
+            value = "AKIA5Q5LV6F7HNEINLWE"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "AWS_SECRET_ACCESS_KEY"
+            value = "JLYBtPuoE0HdpBmfxul92nVi/+lmomfrHkd3NUTR"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

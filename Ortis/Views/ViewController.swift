@@ -4,6 +4,13 @@ import UIKit
 import PixelSDK
 import PhotosUI
 import SwiftUI
+import AWSS3
+import AWSCore
+import AWSCognitoIdentity
+import AWSCognitoIdentityProvider
+import AWSCognitoIdentityProviderASF
+import ClientRuntime
+import AWSClientRuntime
 public var imageToPost:UIImage?
 
 

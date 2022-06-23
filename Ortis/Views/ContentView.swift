@@ -36,6 +36,7 @@ struct UserInfo: Codable, Identifiable{
 
 
 struct ContentView: View {
+    
     @State var users = [User]()
     
     //let vc=ViewController()
@@ -48,6 +49,8 @@ struct ContentView: View {
             //LoginView()
             //HomePageView()
             //MainMenuView()
+            
+        }.onAppear(){
             
         }
     }

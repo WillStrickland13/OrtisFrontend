@@ -16,7 +16,6 @@
 			dependencies = (
 			);
 			name = "PixelSDK-GPUImage3";
-			productName = "PixelSDK-GPUImage3";
 		};
 		E4CCE2DEE87A7CB6ED83791A3E4813FB /* PixelSDK */ = {
 			isa = PBXAggregateTarget;
@@ -28,7 +27,6 @@
 				D6DA3A04C822D556B52CB2109445737E /* PBXTargetDependency */,
 			);
 			name = PixelSDK;
-			productName = PixelSDK;
 		};
 /* End PBXAggregateTarget section */
 
@@ -556,7 +554,7 @@
 		68BC619386306B761DA1D59BB4BD0FAA /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		6941812DB6908B351FD8284C1979822A /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		69D18E3B9F860C8CE3E095477D08529C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		6A3DFA7BC9F3B6B90C65CE42FDCC2A54 /* PixelSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = PixelSDK.xcframework; sourceTree = "<group>"; };
+		6A3DFA7BC9F3B6B90C65CE42FDCC2A54 /* PixelSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = PixelSDK.xcframework; sourceTree = "<group>"; };
 		6AE222D8991F8C56D8CB64D47BC33F0D /* FABKitProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABKitProtocol.h; path = AWSCore/Fabric/FABKitProtocol.h; sourceTree = "<group>"; };
 		6B266114A777391A94387C7609ADFDB4 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		6B66682B727BE2C2BD4F03D696FA2F27 /* AWSS3Service.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSS3Service.h; path = AWSS3/AWSS3Service.h; sourceTree = "<group>"; };
@@ -615,7 +613,7 @@
 		94016F99154CACA78082E79B661AE9AF /* AWSS3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSS3-prefix.pch"; sourceTree = "<group>"; };
 		95270DD0F95FD615DAB5D7E168249FE6 /* AWSKSReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSKSReachability.h; path = AWSCore/KSReachability/AWSKSReachability.h; sourceTree = "<group>"; };
 		955A51868D84AB36509852E787C7E583 /* AWSCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSCore.modulemap; sourceTree = "<group>"; };
-		973884704309036F64B6B9C0EBA2EEA8 /* tommath.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = tommath.c; path = AWSCognitoIdentityProvider/Internal/JKBigInteger/LibTomMath/tommath.c; sourceTree = "<group>"; };
+		973884704309036F64B6B9C0EBA2EEA8 /* tommath.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tommath.c; path = AWSCognitoIdentityProvider/Internal/JKBigInteger/LibTomMath/tommath.c; sourceTree = "<group>"; };
 		999DBB4A16D48146163C66DE2F5425BB /* AWSDDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSDDDispatchQueueLogFormatter.h; path = AWSCore/Logging/Extensions/AWSDDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		99CB7113F36F71CA88E22A0FB4E119C6 /* AWSDDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDDispatchQueueLogFormatter.m; path = AWSCore/Logging/Extensions/AWSDDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		99EE9338E1D6B244955269A699484AEC /* AWSMTLManagedObjectAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLManagedObjectAdapter.m; path = AWSCore/Mantle/AWSMTLManagedObjectAdapter.m; sourceTree = "<group>"; };
@@ -627,7 +625,7 @@
 		9CED6F3C0ED7668470729BB45B488F0D /* AWSCognitoIdentityProviderResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityProviderResources.h; path = AWSCognitoIdentityProvider/AWSCognitoIdentityProviderResources.h; sourceTree = "<group>"; };
 		9D58BD40CEE0D9F5C47BD34B5834BFA9 /* AWSCognitoIdentityUserPool_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityUserPool_Internal.h; path = AWSCognitoIdentityProvider/Internal/AWSCognitoIdentityUserPool_Internal.h; sourceTree = "<group>"; };
 		9D7F652FABC56657A66E62225B5BF354 /* AWSCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSCore.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DE22ACA490E723826DE118705E96794 /* AWSS3CreateMultipartUploadRequest+RequestHeaders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AWSS3CreateMultipartUploadRequest+RequestHeaders.m"; path = "AWSS3/AWSS3CreateMultipartUploadRequest+RequestHeaders.m"; sourceTree = "<group>"; };
 		9E9D21C47CF4CCAEF1C34AD3B52C3CD2 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		9EE13F9601140DDC690ABB00C80652F9 /* AWSFMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFMDatabase.h; path = AWSCore/FMDB/AWSFMDatabase.h; sourceTree = "<group>"; };
@@ -689,7 +687,7 @@
 		CD837E6F78DFD19F83373AC1C0659AC2 /* AWSMantle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMantle.h; path = AWSCore/Mantle/AWSMantle.h; sourceTree = "<group>"; };
 		CE0FC236638C55F0A7B0D6CAC091E1B8 /* AWSFMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFMDB.h; path = AWSCore/FMDB/AWSFMDB.h; sourceTree = "<group>"; };
 		CE1B962276BAD77B0F83216F553C74D3 /* AWSURLRequestRetryHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSURLRequestRetryHandler.m; path = AWSCore/Serialization/AWSURLRequestRetryHandler.m; sourceTree = "<group>"; };
-		CE5139B56AE401FC41122A0006ED023D /* GPUImage.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = GPUImage.xcframework; path = framework/Build/GPUImage.xcframework; sourceTree = "<group>"; };
+		CE5139B56AE401FC41122A0006ED023D /* GPUImage.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GPUImage.xcframework; path = framework/Build/GPUImage.xcframework; sourceTree = "<group>"; };
 		CFDD88620FA8CB11D549A81B0BBE998B /* AWSMTLReflection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLReflection.m; path = AWSCore/Mantle/AWSMTLReflection.m; sourceTree = "<group>"; };
 		D365CC45D4D94B113818E85170BB8A31 /* AWSS3TransferUtilityTasks+Completion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AWSS3TransferUtilityTasks+Completion.h"; path = "AWSS3/AWSS3TransferUtilityTasks+Completion.h"; sourceTree = "<group>"; };
 		D519BF182E69D9CD74944BC03084379F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
@@ -842,6 +840,7 @@
 				04FD4076A13CE4C5F5E087FAB6A34A81 /* SwiftyJSON.swift */,
 				6BCED2C4C91A91D5AC772917466FCC26 /* Support Files */,
 			);
+			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -886,6 +885,7 @@
 				DF8764C71B4F05BB81EFD173B843760C /* Validation.swift */,
 				4252AB8AF1C7474E6834952EAF81162A /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -921,6 +921,7 @@
 				5832C6DFF8C8DE0CA8DF4E2E9B115A6F /* AWSCognitoIdentityProviderASF.m */,
 				D71273E0E39868F22710937B612294CB /* Support Files */,
 			);
+			name = AWSCognitoIdentityProviderASF;
 			path = AWSCognitoIdentityProviderASF;
 			sourceTree = "<group>";
 		};
@@ -956,6 +957,7 @@
 				973884704309036F64B6B9C0EBA2EEA8 /* tommath.c */,
 				AA6F887F9EF770B686D67894F120584E /* Support Files */,
 			);
+			name = AWSCognitoIdentityProvider;
 			path = AWSCognitoIdentityProvider;
 			sourceTree = "<group>";
 		};
@@ -1075,6 +1077,7 @@
 				B27886A48FFDF791239459D26E5B13D6 /* Frameworks */,
 				064D51F6D9AA8016D4CD30089F89297E /* Support Files */,
 			);
+			name = PixelSDK;
 			path = PixelSDK;
 			sourceTree = "<group>";
 		};
@@ -1251,6 +1254,7 @@
 				71DBD2795974543048B84B14B852EBD2 /* NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m */,
 				9972B814B709568FF485BAC602B7379C /* Support Files */,
 			);
+			name = AWSCore;
 			path = AWSCore;
 			sourceTree = "<group>";
 		};
@@ -1291,6 +1295,7 @@
 				4C70F8762C3C8050541851630E8C8640 /* Frameworks */,
 				BC71BCE530952EF727EB899E8EA75541 /* Support Files */,
 			);
+			name = "PixelSDK-GPUImage3";
 			path = "PixelSDK-GPUImage3";
 			sourceTree = "<group>";
 		};
@@ -1330,6 +1335,7 @@
 				9BA34B1016650449D930CA1440E33F26 /* AWSS3TransferUtilityTasks+Completion.m */,
 				875FC6425D6D5F562AF134D22AD401B0 /* Support Files */,
 			);
+			name = AWSS3;
 			path = AWSS3;
 			sourceTree = "<group>";
 		};

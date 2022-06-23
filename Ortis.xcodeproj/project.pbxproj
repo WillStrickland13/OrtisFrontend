@@ -28,6 +28,17 @@
 		608ED6DF277F970A00E94BD7 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6DE277F970A00E94BD7 /* LoginButton.swift */; };
 		608ED6E1277F9F0A00E94BD7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608ED6E0277F9F0A00E94BD7 /* LoginView.swift */; };
 		60EA63D828343188000C738E /* ShowVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA63D728343188000C738E /* ShowVideoView.swift */; };
+		60F7C2CE2835884E00C4E01D /* S3Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F7C2CD2835884E00C4E01D /* S3Service.swift */; };
+		60F7C2D7283599C100C4E01D /* CognitoIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F7C2D6283599C100C4E01D /* CognitoIdentity.swift */; };
+		60F7C2DA2835F97C00C4E01D /* AWSClientRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 60F7C2D92835F97C00C4E01D /* AWSClientRuntime */; };
+		60F7C2DC2835F97C00C4E01D /* AWSCognitoIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = 60F7C2DB2835F97C00C4E01D /* AWSCognitoIdentity */; };
+		60F7C2DE2835F97C00C4E01D /* AWSCognitoIdentityProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 60F7C2DD2835F97C00C4E01D /* AWSCognitoIdentityProvider */; };
+		60F7C2E02835F97C00C4E01D /* AWSConfigService in Frameworks */ = {isa = PBXBuildFile; productRef = 60F7C2DF2835F97C00C4E01D /* AWSConfigService */; };
+		60F7C2E22835F97C00C4E01D /* AWSEC2 in Frameworks */ = {isa = PBXBuildFile; productRef = 60F7C2E12835F97C00C4E01D /* AWSEC2 */; };
+		60F7C2E42835F97C00C4E01D /* AWSEC2InstanceConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 60F7C2E32835F97C00C4E01D /* AWSEC2InstanceConnect */; };
+		60F7C2E62835F97C00C4E01D /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 60F7C2E52835F97C00C4E01D /* AWSS3 */; };
+		60F7C2E82835F97C00C4E01D /* AWSS3Control in Frameworks */ = {isa = PBXBuildFile; productRef = 60F7C2E72835F97C00C4E01D /* AWSS3Control */; };
+		60F7C2EA2835F97C00C4E01D /* AWSS3Outposts in Frameworks */ = {isa = PBXBuildFile; productRef = 60F7C2E92835F97C00C4E01D /* AWSS3Outposts */; };
 		B139796727F27097004F161E /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139796627F27097004F161E /* SearchButton.swift */; };
 		B139796927F2868A004F161E /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139796827F2868A004F161E /* FollowButton.swift */; };
 		B1A577E527F5338400FE1FE4 /* SettingsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A577E427F5338400FE1FE4 /* SettingsPageView.swift */; };
@@ -100,6 +111,8 @@
 		608ED6DE277F970A00E94BD7 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		608ED6E0277F9F0A00E94BD7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		60EA63D728343188000C738E /* ShowVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowVideoView.swift; sourceTree = "<group>"; };
+		60F7C2CD2835884E00C4E01D /* S3Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3Service.swift; sourceTree = "<group>"; };
+		60F7C2D6283599C100C4E01D /* CognitoIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitoIdentity.swift; sourceTree = "<group>"; };
 		6F01A43940B01719C1387767 /* Pods-Ortis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortis.debug.xcconfig"; path = "Target Support Files/Pods-Ortis/Pods-Ortis.debug.xcconfig"; sourceTree = "<group>"; };
 		B139796627F27097004F161E /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		B139796827F2868A004F161E /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
@@ -152,7 +165,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F7C2DC2835F97C00C4E01D /* AWSCognitoIdentity in Frameworks */,
+				60F7C2E02835F97C00C4E01D /* AWSConfigService in Frameworks */,
+				60F7C2DE2835F97C00C4E01D /* AWSCognitoIdentityProvider in Frameworks */,
+				60F7C2EA2835F97C00C4E01D /* AWSS3Outposts in Frameworks */,
+				60F7C2E22835F97C00C4E01D /* AWSEC2 in Frameworks */,
+				60F7C2DA2835F97C00C4E01D /* AWSClientRuntime in Frameworks */,
 				F78FE6F3DBE51FB03765E043 /* Pods_Ortis.framework in Frameworks */,
+				60F7C2E82835F97C00C4E01D /* AWSS3Control in Frameworks */,
+				60F7C2E62835F97C00C4E01D /* AWSS3 in Frameworks */,
+				60F7C2E42835F97C00C4E01D /* AWSEC2InstanceConnect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +194,8 @@
 			children = (
 				6002BDF9282EC43A0068B19A /* LoginServices.swift */,
 				6002BDFB282EC4EF0068B19A /* UserServices.swift */,
+				60F7C2CD2835884E00C4E01D /* S3Service.swift */,
+				60F7C2D6283599C100C4E01D /* CognitoIdentity.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -316,6 +340,17 @@
 			dependencies = (
 			);
 			name = Ortis;
+			packageProductDependencies = (
+				60F7C2D92835F97C00C4E01D /* AWSClientRuntime */,
+				60F7C2DB2835F97C00C4E01D /* AWSCognitoIdentity */,
+				60F7C2DD2835F97C00C4E01D /* AWSCognitoIdentityProvider */,
+				60F7C2DF2835F97C00C4E01D /* AWSConfigService */,
+				60F7C2E12835F97C00C4E01D /* AWSEC2 */,
+				60F7C2E32835F97C00C4E01D /* AWSEC2InstanceConnect */,
+				60F7C2E52835F97C00C4E01D /* AWSS3 */,
+				60F7C2E72835F97C00C4E01D /* AWSS3Control */,
+				60F7C2E92835F97C00C4E01D /* AWSS3Outposts */,
+			);
 			productName = Ortis;
 			productReference = 608ED697277936CE00E94BD7 /* Ortis.app */;
 			productType = "com.apple.product-type.application";
@@ -344,6 +379,9 @@
 				Base,
 			);
 			mainGroup = 608ED68E277936CD00E94BD7;
+			packageReferences = (
+				60F7C2D82835F97C00C4E01D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */,
+			);
 			productRefGroup = 608ED698277936CE00E94BD7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -426,6 +464,7 @@
 				608ED6D9277EBD5F00E94BD7 /* RegisterPage.swift in Sources */,
 				B1A5782F2812178C00FE1FE4 /* SaveButton.swift in Sources */,
 				B1BF405127F4000800763112 /* Settingsbutton.swift in Sources */,
+				60F7C2D7283599C100C4E01D /* CognitoIdentity.swift in Sources */,
 				608ED6AB277D469600E94BD7 /* User.swift in Sources */,
 				B1A5781D280F480A00FE1FE4 /* TrashButton.swift in Sources */,
 				B1A578272811F3F600FE1FE4 /* ProfilePicButton.swift in Sources */,
@@ -467,6 +506,7 @@
 				B1A577FD280659D700FE1FE4 /* SettingsProfilePicture.swift in Sources */,
 				B1A577F527FE8CE000FE1FE4 /* DraftButton.swift in Sources */,
 				B1A5780D2806698000FE1FE4 /* SettingsPrivacy.swift in Sources */,
+				60F7C2CE2835884E00C4E01D /* S3Service.swift in Sources */,
 				608ED6E1277F9F0A00E94BD7 /* LoginView.swift in Sources */,
 				B1A5781128066B4400FE1FE4 /* SettingsPassword.swift in Sources */,
 				B1A577E727F6326300FE1FE4 /* EditingPageView.swift in Sources */,
@@ -690,6 +730,65 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		60F7C2D82835F97C00C4E01D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/awslabs/aws-sdk-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		60F7C2D92835F97C00C4E01D /* AWSClientRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60F7C2D82835F97C00C4E01D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSClientRuntime;
+		};
+		60F7C2DB2835F97C00C4E01D /* AWSCognitoIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60F7C2D82835F97C00C4E01D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSCognitoIdentity;
+		};
+		60F7C2DD2835F97C00C4E01D /* AWSCognitoIdentityProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60F7C2D82835F97C00C4E01D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSCognitoIdentityProvider;
+		};
+		60F7C2DF2835F97C00C4E01D /* AWSConfigService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60F7C2D82835F97C00C4E01D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSConfigService;
+		};
+		60F7C2E12835F97C00C4E01D /* AWSEC2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60F7C2D82835F97C00C4E01D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSEC2;
+		};
+		60F7C2E32835F97C00C4E01D /* AWSEC2InstanceConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60F7C2D82835F97C00C4E01D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSEC2InstanceConnect;
+		};
+		60F7C2E52835F97C00C4E01D /* AWSS3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60F7C2D82835F97C00C4E01D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSS3;
+		};
+		60F7C2E72835F97C00C4E01D /* AWSS3Control */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60F7C2D82835F97C00C4E01D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSS3Control;
+		};
+		60F7C2E92835F97C00C4E01D /* AWSS3Outposts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60F7C2D82835F97C00C4E01D /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSS3Outposts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 608ED68F277936CD00E94BD7 /* Project object */;
 }
